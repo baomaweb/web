@@ -1,0 +1,290 @@
+
+    body{ margin :0;}
+    .main{margin:0 auto; width: 1110px; overflow :hidden ; background-color :#ffffff;padding:0;}/*主容器*/
+    .top{
+	width: 1060px
+    margin: 0;
+    height: 65px;
+}/*顶*/
+    .left{
+    width: 160px;
+    height: auto;
+    float: left;
+}/*左部分*/
+    .middle{ width:800px ;margin:0; padding:0;overflow :hidden ;}/*中部*/
+    .right{
+    margin : 0;
+    width: 150px;
+    float : right;
+    background-color : #ACE4B6;
+}/*右部分*/
+    .left,.middle,.right{margin-bottom:-10000px;padding-bottom:10000px;}/*三列一样高的技巧*/    
+    .bottom{
+    margin: 0 auto;
+    width : 1055px;
+    height: 100px;
+    overflow : hidden;
+}/*底部*/
+    .tb{
+    width:800px;
+    text-align:center;
+    line-height:30px;
+    float: left;
+	margin:1px; 
+    padding:1px;
+    border-top:5px;
+}/*表格*/
+    .tb1{
+    width:800px;	
+    text-align:center;
+    line-height:30px;
+    float: left;
+	margin:0px; 
+    padding:0px;
+    border-top:5px;
+}/*表格*/
+    .tb2{
+    width:1055px;
+    text-align:center;
+    line-height:40px;
+    float: left;
+	margin:1px; 
+    padding:1px;
+	display:inline-block;
+    border-top:5px;
+}/*表格*/
+    .tb3{
+    width:160px;
+    text-align:center;
+    float: left;
+	margin:1px; 
+    padding:1px;
+	display:inline-block;
+    border-top:5px;
+}/*表格*/
+    .logo{
+    height: 60px;
+    float: left;
+	margin-left:0px;
+	list-style-type:none
+}
+    .banner{
+    height: 60px;
+	list-style-type:none
+}
+    .banner1{
+    height: 60px;
+    float: right;
+	list-style-type:none
+}
+    .t1{
+    width: 180px;
+    height: 60px;
+    float: left;
+    text-align:center;
+    background:#ccc;
+    margin-right:1px;
+    margin-bottom:1px;
+    list-style-type:none;
+}/*表格*/
+    .t2{
+    width: auto;
+    height: 60px;
+    float: center;
+    text-align:center;
+    background:#ccc;
+    margin-right:1px;
+    margin-bottom:1px;
+    list-style-type:none;
+}/*表格*/
+    .t3{
+    width: 120px;
+    height: 60px;
+    float: right;
+    text-align:center;
+    background:#ccc;
+    margin-right:1px;
+    margin-bottom:1px;
+    list-style-type:none;
+}/*表格*/
+    .bt0{
+    width: 800px;
+    height: 50px;
+    float: left;
+    text-align:center;
+    background:#B0E0E6;
+    margin-right:0px;
+    margin-bottom:0px;
+    line-height:15px;
+    font-size:15px;
+    list-style-type:none;
+}/*表格*/
+    .bt00{
+    width: 160px;
+    height: 30px;
+    float: left;
+    text-align:center;
+    background:#F5F5F5;
+    margin-right:0px;
+    margin-bottom:0px;
+    line-height:30px;
+    font-size:14px;
+    list-style-type:none;
+}/*表格*/
+    .bt1{
+    width: 160px;
+    height: 85px;
+    float: left;
+    text-align:center;
+    margin-right:1px;
+    margin-bottom:1px;
+    line-height:15px;
+    font-size:14px;
+    list-style-type:none;
+}/*表格*/
+    .bt16{
+    width: 158px;
+    height: 70px;
+    float: left;
+    text-align:center;
+    margin-right:1px;
+    margin-bottom:1px;
+    line-height:14px;
+    font-size:14px;
+    list-style-type:none;
+}/*表格*/
+    .bt2{
+    width: 300px;
+    height: 85px;
+    float: left;
+    text-align:center;
+    margin-right:1px;
+    margin-bottom:1px;
+    line-height:15px;
+    font-size:14px;
+    list-style-type:none;
+}/*表格*/
+    .bt3{
+    width: 450px;
+    height: 80px;
+    float: left;
+    text-align:center;
+    margin-right:1px;
+    margin-bottom:1px;
+    line-height:15px;
+    font-size:14px;
+    list-style-type:none;
+}/*表格*/
+    .bt4{
+    width: 600px;
+    height: 80px;
+    float: left;
+    text-align:center;
+    background:#ccc;
+    margin-right:1px;
+    margin-bottom:1px;
+    line-height:15px;
+    font-size:14px;
+    list-style-type:none;
+}/*表格*/
+    .bt5{
+    width: 750px;
+    height: 80px;
+    float: left;
+    text-align:center;
+    background:#ccc;
+    margin-right:1px;
+    margin-bottom:1px;
+    line-height:15px;
+    font-size:14px;
+    list-style-type:none;
+}/*表格*/
+    .bt50{
+    width: 750px;
+    height: 30px;
+    float: left;
+    text-align:center;
+    background:#B0E0E6;
+    margin-right:1px;
+    margin-bottom:1px;
+    line-height:30px;
+    font-size:14px;
+    list-style-type:none;
+}/*表格*/
+    .bt6{
+    width: 750px;
+    height: 110px;
+    float: left;
+    text-align:center;
+    margin-right:1px;
+    margin-bottom:1px;
+    line-height:15px;
+    font-size:14px;
+    list-style-type:none;
+}/*表格*/
+    .bt60{
+    width: 750px;
+    height: 14px;
+    float: left;
+    text-align:center;
+    background:#B0E0E6;
+    margin-right:1px;
+    margin-bottom:1px;
+    line-height:14px;
+    font-size:14px;
+    list-style-type:none;
+}/*表格*/
+    .bt9{
+    height: 20px;
+    width: 40px;
+	float:left;
+    margin-right:0px;
+    margin-bottom:0px;
+    line-height:25px;
+    font-size:14px;
+    list-style-type:none;
+}/*表格*/
+    .bt90{
+    height: 20px;
+    width: 40px;
+	float:left;
+    margin-right:0px;
+    margin-bottom:0px;
+    line-height:25px;
+    font-size:12px;
+    list-style-type:none;
+}/*表格*/
+    .bt900{
+    height: 20px;
+    width: 80px;
+	float:left;
+    margin-right:0px;
+    margin-bottom:0px;
+    line-height:25px;
+    font-size:12px;
+    list-style-type:none;
+}/*表格*/
+    .bt91{	
+    height: 20px;
+	float:left;
+    margin-right:5px;
+    margin-bottom:1px;
+    line-height:20px;	
+    font-size:14px;
+    list-style-type:none;
+}/*表格*/
+    .bt100{
+    height: 20px;
+    width: 1050px;
+    line-height:20px;
+    text-align:center;
+    font-size:14px;
+    list-style-type:none;
+}/*表格*/
+    .clear{ clear :both ; overflow :hidden ; }/*消除上边对下边的影响*/
+	a{ text-decoration:none} 
+    a:hover{ text-decoration:underline} 
+    a:link {color: #000000;} /* 未访问的链接 */
+    a:visited {color: #000000;} /* 已访问的链接 */
+    a:hover {color: #008000;background:	#87CEEB;border-radius:5px;} /* 鼠标移动到链接上 */
+    a:active {color: #00FF00;} /* 选定的链接 */
