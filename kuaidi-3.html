@@ -1,0 +1,270 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>快递 物流 网址导航</title>
+  <link href="styles/tailwind.min.2.css" rel="stylesheet">
+  <link href="styles/all.min.2.css" rel="stylesheet">
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+    .container-wrapper {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    .header-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 900px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    .main-content {
+      display: flex;
+      flex: 1;
+      width: 100%;
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 12px 0;
+    }
+    .sidebar {
+      width: 150px;
+      background-color: #f8fafc;
+      border-radius: 12px;
+      padding: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+      flex-shrink: 0;
+    }
+    .content-area {
+      width: 760px;
+      margin-left: 15px;
+      flex-shrink: 0;
+    }
+    .nav-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-gap: 10px;
+    }
+    .nav-item {
+      background: white;
+      border-radius: 12px;
+      padding: 10px;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+      transition: all 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .nav-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    }
+    .nav-icon {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #f1f5f9;
+      color: #64748b;
+      font-size: 14px;
+      flex-shrink: 0;
+    }
+    .ad-banner {
+      width: 480px;
+      height: 60px;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: bold;
+    }
+    @media (max-width: 1024px) {
+      .header-content {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px 20px;
+      }
+      .ad-banner {
+        width: 100%;
+        max-width: 480px;
+      }
+      .ad-banner1 {
+        width: 100%;
+        max-width: 150px;
+      }
+      .ad-banner2 {
+        width: 100%;
+        max-width: 750px;
+      }
+      .main-content {
+        padding: 20px 15px;
+      }
+      .sidebar {
+        width: 120px;
+        padding: 15px;
+      }
+      .content-area {
+        width: calc(100% - 160px);
+        margin-left: 20px;
+      }
+      .nav-grid {
+        grid-gap: 15px;
+      }
+      .nav-item {
+        padding: 15px;
+      }
+    }
+    @media (max-width: 768px) {
+      .main-content {
+        flex-direction: column;
+        align-items: center;
+      }
+      .sidebar {
+        width: 100%;
+        max-width: 150px;
+        margin-bottom: 20px;
+      }
+      .content-area {
+        width: 100%;
+        max-width: 760px;
+        margin-left: 0;
+      }
+    }
+  </style>
+</head>
+<body class="bg-gray-100">
+  <div class="container-wrapper">
+    <!-- 顶部区域 -->
+    <header class="py-6 bg-white shadow-sm flex-shrink-0">
+      <div class="header-content">
+
+        <div class="logo-area">
+          <a href="index-3.html"><img src="image/logo.png" width="176" height="60" alt="网址导航 首页"/></a>
+        </div>
+        
+        <div class="ad-area">
+          <div class="ad-banner">
+            <span>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6172791470588821"
+     crossorigin="anonymous"></script>
+<!-- 480x60 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:480px;height:60px"
+     data-ad-client="ca-pub-6172791470588821"
+     data-ad-slot="1674008001"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- 主体内容区域 -->
+    <main class="flex-1">
+      <div class="main-content">
+        <!-- 左侧边栏 -->
+        <aside class="sidebar">
+          <h2 class="text-lg font-semibold mb-4 text-gray-700">分类导航</h2>
+          <ul class="space-y-2">
+            <li style="display: flex; align-items: center; gap: 5px; margin-bottom: 10px;">
+			<image src="image/star.png"><a href="index-3.html" target="_blank">首页</a>
+			<image src="image/star.png"><a href="xinwen-3.html" target="_blank">新闻</a>		
+            </li>
+            <li style="display: flex; align-items: center; gap: 5px; margin-bottom: 10px;">
+			<image src="image/star.png"><a href="shipin-3.html" target="_blank">视频</a>
+			<image src="image/star.png"><a href="yinyue-3.html" target="_blank">音乐</a>			
+            </li>
+            <li style="display: flex; align-items: center; gap: 5px; margin-bottom: 10px;">
+			<image src="image/star.png"><a href="shequ-3.html" target="_blank">社区</a>
+			<image src="image/star.png"><a href="youxi-3.html" target="_blank">游戏</a>			
+            </li>
+            <li style="display: flex; align-items: center; gap: 5px; margin-bottom: 10px;">
+			<image src="image/star.png"><a href="keji-3.html" target="_blank">科技</a>
+			<image src="image/star.png"><a href="caijing-3.html" target="_blank">财经</a>			
+            </li>
+            <li style="display: flex; align-items: center; gap: 5px; margin-bottom: 10px;">
+			<image src="image/star.png"><a href="youxiang-3.html" target="_blank">邮箱</a>
+			<image src="image/star.png"><a href="zhaopin-3.html" target="_blank">招聘</a>			
+            </li>
+            <li style="display: flex; align-items: center; gap: 5px; margin-bottom: 10px;">
+			<image src="image/star.png"><a href="sousuo-3.html" target="_blank">搜索</a>
+			<image src="image/star.png"><a href="kuaidi-3.html" target="_blank">快递</a>			
+            </li>
+          </ul>
+          <hr>
+          <ul class="ad-banner1">
+             <li style="display: flex; align-items: center; gap: 12px; >
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6172791470588821"
+     crossorigin="anonymous"></script>
+<!-- 150x60 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:150px;height:60px"
+     data-ad-client="ca-pub-6172791470588821"
+     data-ad-slot="2776106188"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>			 
+			 </li>
+          </ul>
+        </aside>
+
+        <!-- 右侧内容区 -->
+        <section class="content-area">
+          <div class="nav-grid">
+			
+             <a href="https://www.ems.com.cn/" class="nav-item" target="_blank"><img src="kuaidiwuliu/ems.jpg" alt="EMS快递"/></a> 
+             <a href="https://www.dhl.com/cn-zh/home.html" class="nav-item" target="_blank"><img src="kuaidiwuliu/DHL.jpg" alt="DHL"/></a> 
+             <a href="https://www.fedex.com/zh-cn/home.html" class="nav-item" target="_blank"><img src="kuaidiwuliu/FEDEX.jpg" alt="FEDEX"/></a> 
+             <a href="https://www.tnt.com/express/zh_cn/site/home.html" class="nav-item" target="_blank"><img src="kuaidiwuliu/TNT.jpg" alt="TNT"/></a> 
+             <a href="https://www.ups.com/cn/zh/Home.page" class="nav-item" target="_blank"><img src="kuaidiwuliu/ups.jpg" alt="UPS"/></a>    
+             <a href="https://www.ems.com.cn/" class="nav-item" target="_blank"><img src="kuaidiwuliu/中国邮政速递.png" alt="中国邮政速递"/></a>           
+			 <a href="https://www.sf-express.com/cn/sc/index.html" class="nav-item" target="_blank"><img src="kuaidiwuliu/顺丰.jpg" alt="顺丰"/></a> 
+             <a href="https://www.jdl.com/" class="nav-item" target="_blank"><img src="kuaidiwuliu/京东物流.png" alt="京东快递"/></a> 
+             <a href="https://www.sto.cn/" class="nav-item" target="_blank"><img src="kuaidiwuliu/申通.png" alt="申通快递"/></a></th>
+             <a href="https://www.yto.net.cn/" class="nav-item" target="_blank"><img src="kuaidiwuliu/圆通.png" alt="圆通快递"/></a> 
+             <a href="https://www.zto.com/" class="nav-item" target="_blank"><img src="kuaidiwuliu/中通.png" lt="中通快递"/></a> 
+             <a href="http://www.yundaex.com/cn/index.php" class="nav-item" target="_blank"><img src="kuaidiwuliu/韵达.png" alt="韵达快递"/></a> 
+             <a href="https://www.jtexpress.cn/" class="nav-item" target="_blank"><img src="kuaidiwuliu/极兔速递.png" alt="极兔速递"/></a> 
+             <a href="http://www.800best.com.cn/" class="nav-item" target="_blank"><img src="kuaidiwuliu/百世.png" alt="百世"/></a> 
+             <a href="https://www.uce.cn/" class="nav-item" target="_blank"><img src="kuaidiwuliu/优速快递.png" alt="优速快递"/></a> 
+             <a href="https://www.cainiao.com/" class="nav-item" target="_blank"><img src="kuaidiwuliu/菜鸟.png" alt="菜鸟"/></a> 
+             <a href="https://www.95572.com/" class="nav-item" target="_blank"><img src="kuaidiwuliu/中铁快运.png" alt="中铁快运"/></a> 
+             <a href="https://www.zjs.com.cn/" class="nav-item" target="_blank"><img src="kuaidiwuliu/宅急送.png" alt="宅急送"/></a> 
+             <a href="https://www.deppon.com/" class="nav-item" target="_blank"><img src="kuaidiwuliu/德邦.png" alt="德邦快递"/></a> 
+             <a href="https://www.ky-express.com/" class="nav-item" target="_blank"><img src="kuaidiwuliu/跨越速运.jpg" alt="跨越速运"/></a> 
+             <a href="https://www.ane56.com/" class="nav-item" target="_blank"><img src="kuaidiwuliu/安能.png" alt="安能"/></a>  
+             <a href="https://www.zto56.com/" class="nav-item" target="_blank"><img src="kuaidiwuliu/中通快运.png" lt="中通快运"/></a> 
+             <a href="https://www.shenghui56.com/" class="nav-item" target="_blank"><img src="kuaidiwuliu/盛辉物流.png" alt="盛辉物流"/></a>  				
+
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- 页脚 -->
+    <footer>
+      <div class="max-w-6xl mx-auto">
+        <p>© 2026 <a href="https://www.baomashenghuo.com" target="_blank" >宝妈生活-网址导航</a> | <a href="https://www.baomashenghuo.com" target="_blank" >www.baomashenghuo.com</a></p>
+        <p class="mt-1 text-sm">为您提供便捷的上网入口</p>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

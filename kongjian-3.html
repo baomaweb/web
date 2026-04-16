@@ -1,0 +1,261 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>网站 空间 服务器 域名 数据库 网址导航</title>
+  <link href="styles/tailwind.min.2.css" rel="stylesheet">
+  <link href="styles/all.min.2.css" rel="stylesheet">
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+    .container-wrapper {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    .header-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 900px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    .main-content {
+      display: flex;
+      flex: 1;
+      width: 100%;
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 12px 0;
+    }
+    .sidebar {
+      width: 150px;
+      background-color: #f8fafc;
+      border-radius: 12px;
+      padding: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+      flex-shrink: 0;
+    }
+    .content-area {
+      width: 760px;
+      margin-left: 15px;
+      flex-shrink: 0;
+    }
+    .nav-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-gap: 10px;
+    }
+    .nav-item {
+      background: white;
+      border-radius: 12px;
+      padding: 10px;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+      transition: all 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .nav-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    }
+    .nav-icon {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #f1f5f9;
+      color: #64748b;
+      font-size: 14px;
+      flex-shrink: 0;
+    }
+    .ad-banner {
+      width: 480px;
+      height: 60px;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: bold;
+    }
+    @media (max-width: 1024px) {
+      .header-content {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px 20px;
+      }
+      .ad-banner {
+        width: 100%;
+        max-width: 300px;
+      }
+      .main-content {
+        padding: 20px 15px;
+      }
+      .sidebar {
+        width: 120px;
+        padding: 15px;
+      }
+      .content-area {
+        width: calc(100% - 160px);
+        margin-left: 20px;
+      }
+      .nav-grid {
+        grid-gap: 15px;
+      }
+      .nav-item {
+        padding: 15px;
+      }
+    }
+    @media (max-width: 768px) {
+      .main-content {
+        flex-direction: column;
+        align-items: center;
+      }
+      .sidebar {
+        width: 100%;
+        max-width: 150px;
+        margin-bottom: 20px;
+      }
+      .content-area {
+        width: 100%;
+        max-width: 760px;
+        margin-left: 0;
+      }
+    }
+  </style>
+</head>
+<body class="bg-gray-100">
+  <div class="container-wrapper">
+    <!-- 顶部区域 -->
+    <header class="py-6 bg-white shadow-sm flex-shrink-0">
+      <div class="header-content">
+
+        <div class="logo-area">
+          <a href="index-3.html"><img src="image/logo.png" width="176" height="60" alt="网址导航 首页"/></a>
+        </div>
+        
+        <div class="ad-area">
+          <div class="ad-banner">
+            <span>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6172791470588821"
+     crossorigin="anonymous"></script>
+<!-- 480x60 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:480px;height:60px"
+     data-ad-client="ca-pub-6172791470588821"
+     data-ad-slot="1674008001"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+
+    <main class="flex-1">
+      <div class="main-content">
+
+        <aside class="sidebar">
+          <h2 class="text-lg font-semibold mb-4 text-gray-700">分类导航</h2>
+          <ul class="space-y-2">
+            <li style="display: flex; align-items: center; gap: 5px; margin-bottom: 10px;">
+			<image src="image/star.png"><a href="index-3.html" target="_blank">首页</a>
+			<image src="image/star.png"><a href="xinwen-3.html" target="_blank">新闻</a>		
+            </li>
+            <li style="display: flex; align-items: center; gap: 5px; margin-bottom: 10px;">
+			<image src="image/star.png"><a href="shipin-3.html" target="_blank">视频</a>
+			<image src="image/star.png"><a href="yinyue-3.html" target="_blank">音乐</a>			
+            </li>
+            <li style="display: flex; align-items: center; gap: 5px; margin-bottom: 10px;">
+			<image src="image/star.png"><a href="shequ-3.html" target="_blank">社区</a>
+			<image src="image/star.png"><a href="youxi-3.html" target="_blank">游戏</a>			
+            </li>
+            <li style="display: flex; align-items: center; gap: 5px; margin-bottom: 10px;">
+			<image src="image/star.png"><a href="keji-3.html" target="_blank">科技</a>
+			<image src="image/star.png"><a href="caijing-3.html" target="_blank">财经</a>			
+            </li>
+            <li style="display: flex; align-items: center; gap: 5px; margin-bottom: 10px;">
+			<image src="image/star.png"><a href="youxiang-3.html" target="_blank">邮箱</a>
+			<image src="image/star.png"><a href="zhaopin-3.html" target="_blank">招聘</a>			
+            </li>
+            <li style="display: flex; align-items: center; gap: 5px; margin-bottom: 10px;">
+			<image src="image/star.png"><a href="sousuo-3.html" target="_blank">搜索</a>
+			<image src="image/star.png"><a href="zhaopin-3.html" target="_blank">招聘</a>			
+            </li>
+          </ul>
+          <hr>
+          <ul class="space-y-2">
+             <li style="display: flex; align-items: center; gap: 12px; margin-bottom: 10px;"><image src="image/blue.png" style="width: 20px; height: 20px;">
+			 <a href="kongjian-31.html" target="_blank">国内服务商</a></li>
+             <li style="display: flex; align-items: center; gap: 12px; margin-bottom: 10px;"><image src="image/blue.png" style="width: 20px; height: 20px;">
+			 <a href="kongjian-32.html" target="_blank">国外服务商</a></li>
+             <li style="display: flex; align-items: center; gap: 12px; margin-bottom: 10px;"><image src="image/blue.png" style="width: 20px; height: 20px;">
+			 <a href="wangpan-3.html" target="_blank">网盘 云盘</a></li>
+          </ul>
+        </aside>
+
+        <section class="content-area">
+          <div class="nav-grid">
+             <a href="https://www.aliyun.com/" target="_blank" class="nav-item"><img src="wangluokongjian/阿里云.png" alt="阿里云"/></a> 
+             <a href="http://www.xinnet.com/" target="_blank" class="nav-item"><img src="wangluokongjian/新网.jpg" alt="新网"/></a> 
+             <a href="https://cloud.tencent.com/" target="_blank" class="nav-item"><img src="wangluokongjian/腾讯云.jpg" alt=""/></a> 
+             <a href="https://www.huaweicloud.com/" target="_blank" class="nav-item"><img src="wangluokongjian/华为云.png" alt=""/></a> 
+             <a href="https://cloud.baidu.com/" target="_blank" class="nav-item"><img src="wangluokongjian/百度智能云.png" alt=""/></a> 
+             <a href="https://www.ctyun.cn/" target="_blank" class="nav-item"><img src="wangluokongjian/天翼云.jpg" alt=""/></a>
+             <a href="https://www.volcengine.com/" target="_blank" class="nav-item"><img src="wangluokongjian/火山引擎.png" alt="火山引擎"/></a> 
+             <a href="https://sg.godaddy.com/zh" target="_blank" class="nav-item"><img src="wangluokongjian/Godaddy.png" alt="Godaddy"/></a> 
+             <a href="http://www.jdcloud.com/" target="_blank" class="nav-item"><img src="wangluokongjian/京东云.jpg" alt=""/></a> 
+             <a href="http://www.qingcloud.com/" target="_blank" class="nav-item"><img src="wangluokongjian/青云.png" alt=""/></a>  
+             <a href="https://www.alipan.com/" target="_blank" class="nav-item"><img src="wangluokongjian/阿里云盘.png" alt="阿里云盘"/></a> 
+             <a href="https://pan.quark.cn/" target="_blank" class="nav-item"><img src="wangluokongjian/夸克网盘.png" alt="夸克网盘"/></a> 
+             <a href="https://pan.baidu.com/" target="_blank" class="nav-item"><img src="wangluokongjian/百度网盘.png" alt="百度网盘"/></a>  
+             <a href="https://www.icloud.com/" target="_blank" class="nav-item"><img src="wangluokongjian/iCloud.png" alt="苹果iCloud网盘"/></a>  
+             <a href="https://cloud.tencent.com/" target="_blank" class="nav-item"><img src="wangluokongjian/腾讯云.jpg" alt="腾讯云"/></a> 
+             <a href="https://cloud.189.cn/" target="_blank" class="nav-item"><img src="wangluokongjian/天翼云盘.jpg" alt="天翼云盘"/></a> 
+             <a href="https://yun.139.com/" target="_blank" class="nav-item"><img src="wangluokongjian/中国移动云盘.png" alt="移动云盘"/></a> 
+             <a href="https://pan.wo.cn/" target="_blank" class="nav-item"><img src="wangluokongjian/联通云盘.png" alt="联通云盘"/></a> 
+             <a href="https://www.huaweicloud.com/" target="_blank" class="nav-item"><img src="wangluokongjian/华为云.png" alt="华为云"/></a> 
+             <a href="https://yunpan.360.cn/" target="_blank" class="nav-item"><img src="wangluokongjian/360云盘.png" alt="360云盘"/></a> 
+             <a href="https://115.com/" target="_blank" class="nav-item"><img src="wangluokongjian/115网盘.png" alt="115网盘"/></a> 
+             <a href="https://www.ctfile.com/" target="_blank" class="nav-item"><img src="wangluokongjian/城通网盘1.png" alt="城通网盘"/></a> 
+             <a href="https://pan.bitqiu.com/" target="_blank" class="nav-item"><img src="wangluokongjian/比特球云盘.png" alt="比特球云盘"/></a> 
+             <a href="https://www.lanzou.com/" target="_blank" class="nav-item"><img src="wangluokongjian/蓝奏云.jpg" alt="蓝奏云"/></a> 
+             <a href="https://www.jianguoyun.com/" target="_blank" class="nav-item"><img src="wangluokongjian/坚果云.png" alt="坚果云"/></a> 
+             <a href="https://www.qiniu.com/" target="_blank" class="nav-item"><img src="wangluokongjian/七牛云.png" alt="七牛云"/></a>
+             <a href="https://aws.amazon.com/" target="_blank" class="nav-item"><img src="wangluokongjian/aws 亚马逊云.png" alt="aws 亚马逊云"/></a>
+             <a href="hhttps://www.123pan.com/" target="_blank" class="nav-item"><img src="wangluokongjian/123网盘.png" alt="123网盘"/></a>
+             <a href="https://www.feijipan.com/" target="_blank" class="nav-item"><img src="wangluokongjian/小飞机网盘.png" alt="小飞机网盘"/></a>
+             <a href="https://ys168.com/" target="_blank" class="nav-item"><img src="wangluokongjian/永硕云盘.png" alt="永硕e盘"/></a>
+
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- 页脚 -->
+    <footer>
+      <div class="max-w-6xl mx-auto">
+        <p>© 2026 <a href="https://www.baomashenghuo.com" target="_blank" >宝妈生活-网址导航</a> | <a href="https://www.baomashenghuo.com" target="_blank" >www.baomashenghuo.com</a></p>
+        <p class="mt-1 text-sm">为您提供便捷的上网入口</p>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

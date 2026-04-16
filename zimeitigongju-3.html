@@ -1,0 +1,280 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>自媒体编辑工具 公众号在线排版编辑 图文编辑制作 网址导航</title>
+  <link href="styles/tailwind.min.2.css" rel="stylesheet">
+  <link href="styles/all.min.2.css" rel="stylesheet">
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+    .container-wrapper {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    .header-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 900px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    .main-content {
+      display: flex;
+      flex: 1;
+      width: 100%;
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 12px 0;
+    }
+    .sidebar {
+      width: 150px;
+      background-color: #f8fafc;
+      border-radius: 12px;
+      padding: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+      flex-shrink: 0;
+    }
+    .content-area {
+      width: 760px;
+      margin-left: 15px;
+      flex-shrink: 0;
+    }
+    .nav-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-gap: 10px;
+    }
+    .nav-item {
+      background: white;
+      border-radius: 12px;
+      padding: 10px;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+      transition: all 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .nav-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    }
+    .nav-icon {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #f1f5f9;
+      color: #64748b;
+      font-size: 14px;
+      flex-shrink: 0;
+    }
+    .ad-banner {
+      width: 480px;
+      height: 60px;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: bold;
+    }
+    @media (max-width: 1024px) {
+      .header-content {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px 20px;
+      }
+      .ad-banner {
+        width: 100%;
+        max-width: 480px;
+      }
+      .ad-banner1 {
+        width: 100%;
+        max-width: 150px;
+      }
+      .ad-banner2 {
+        width: 100%;
+        max-width: 750px;
+      }
+      .main-content {
+        padding: 20px 15px;
+      }
+      .sidebar {
+        width: 120px;
+        padding: 15px;
+      }
+      .content-area {
+        width: calc(100% - 160px);
+        margin-left: 20px;
+      }
+      .nav-grid {
+        grid-gap: 15px;
+      }
+      .nav-item {
+        padding: 15px;
+      }
+    }
+    @media (max-width: 768px) {
+      .main-content {
+        flex-direction: column;
+        align-items: center;
+      }
+      .sidebar {
+        width: 100%;
+        max-width: 150px;
+        margin-bottom: 20px;
+      }
+      .content-area {
+        width: 100%;
+        max-width: 760px;
+        margin-left: 0;
+      }
+    }
+  </style>
+</head>
+<body class="bg-gray-100">
+  <div class="container-wrapper">
+    <!-- 顶部区域 -->
+    <header class="py-6 bg-white shadow-sm flex-shrink-0">
+      <div class="header-content">
+
+        <div class="logo-area">
+          <a href="index-3.html"><img src="image/logo.png" width="176" height="60" alt="网址导航 首页"/></a>
+        </div>
+        
+        <div class="ad-area">
+          <div class="ad-banner">
+            <span>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6172791470588821"
+     crossorigin="anonymous"></script>
+<!-- 480x60 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:480px;height:60px"
+     data-ad-client="ca-pub-6172791470588821"
+     data-ad-slot="1674008001"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- 主体内容区域 -->
+    <main class="flex-1">
+      <div class="main-content">
+        <!-- 左侧边栏 -->
+        <aside class="sidebar">
+          <h2 class="text-lg font-semibold mb-4 text-gray-700">分类导航</h2>
+          <ul class="space-y-2">
+            <li style="display: flex; align-items: center; gap: 5px; margin-bottom: 10px;">
+			<image src="image/star.png"><a href="index-3.html" target="_blank">首页</a>
+			<image src="image/star.png"><a href="xinwen-3.html" target="_blank">新闻</a>		
+            </li>
+            <li style="display: flex; align-items: center; gap: 5px; margin-bottom: 10px;">
+			<image src="image/star.png"><a href="shipin-3.html" target="_blank">视频</a>
+			<image src="image/star.png"><a href="yinyue-3.html" target="_blank">音乐</a>			
+            </li>
+            <li style="display: flex; align-items: center; gap: 5px; margin-bottom: 10px;">
+			<image src="image/star.png"><a href="shequ-3.html" target="_blank">社区</a>
+			<image src="image/star.png"><a href="zimeiti-3.html" target="_blank">自媒体</a>			
+            </li>
+            <li style="display: flex; align-items: center; gap: 5px; margin-bottom: 10px;">
+			<image src="image/star.png"><a href="keji-3.html" target="_blank">科技</a>
+			<image src="image/star.png"><a href="caijing-3.html" target="_blank">财经</a>			
+            </li>
+            <li style="display: flex; align-items: center; gap: 5px; margin-bottom: 10px;">
+			<image src="image/star.png"><a href="youxiang-3.html" target="_blank">邮箱</a>
+			<image src="image/star.png"><a href="sousuo-3.html" target="_blank">搜索</a>		
+            </li>
+            <li style="display: flex; align-items: center; gap: 5px; margin-bottom: 10px;">
+			<image src="image/star.png"><a href="kongjian-3.html" target="_blank">空间</a>
+			<image src="image/star.png"><a href="youxi-3.html" target="_blank">游戏</a>		
+            </li>
+            <li style="display: flex; align-items: center; gap: 5px; margin-bottom: 10px;">
+			<image src="image/star.png"><a href="zhaopin-3.html" target="_blank">招聘</a>	
+			<image src="image/star.png"><a href="kuaidi-3.html" target="_blank">快递</a>			
+            </li>
+          </ul>
+          <hr>
+          <ul class="space-y-2">
+             <li style="display: flex; align-items: center; gap: 12px; margin-bottom: 10px;"><image src="image/green.png" style="width: 20px; height: 20px;">
+			 <a href="bianji-3.html" target="_blank">编辑排版工具</a></li>
+          </ul>
+          <ul class="ad-banner1">
+             <li style="display: flex; align-items: center; gap: 12px; >
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6172791470588821"
+     crossorigin="anonymous"></script>
+<!-- 150x60 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:150px;height:60px"
+     data-ad-client="ca-pub-6172791470588821"
+     data-ad-slot="2776106188"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>			 
+			 </li>
+          </ul>
+        </aside>
+
+        <!-- 右侧内容区 -->
+        <section class="content-area">
+          <div class="nav-grid">
+		    <a href="https://www.135editor.com/" class="nav-item" target="_blank"><img src="zimeiti/gongju/135.png" alt="135编辑器"/></a>
+		    <a href="https://xiumi.us/" class="nav-item" target="_blank"><img src="zimeiti/gongju/秀米.png" alt="秀米编辑器"/></a>
+		    <a href="https://ipaiban.com/" class="nav-item" target="_blank"><img src="zimeiti/gongju/i排版.png" alt="i排版编辑器"/></a>
+		    <a href="https://yiban.io/" class="nav-item" target="_blank"><img src="zimeiti/gongju/壹伴.png" alt="壹伴编辑器"/></a>
+		    <a href="https://bj.96weixin.com/" class="nav-item" target="_blank"><img src="zimeiti/gongju/96.png" alt="96编辑器"/></a>
+		    <a href="https://www.xmyeditor.com/" class="nav-item" target="_blank"><img src="zimeiti/gongju/小墨鹰.png" alt="小墨鹰编辑器"/></a>
+		    <a href="https://www.uecloud.com/" class="nav-item" target="_blank"><img src="zimeiti/gongju/有一云.png" alt="有一云编辑器"/></a>
+		    <a href="https://60editor.com/" class="nav-item" target="_blank"><img src="zimeiti/gongju/60.png" alt="60编辑器"/></a>
+		    <a href="https://www.365editor.com/" class="nav-item" target="_blank"><img src="zimeiti/gongju/365.png" alt="365编辑器"/></a>
+		    <a href="https://www.wxeditor.com/" class="nav-item" target="_blank"><img src="zimeiti/gongju/易点.png" alt="易点编辑器"/></a>
+		    <a href="https://www.mbian.com/" class="nav-item" target="_blank"><img src="zimeiti/gongju/美编.png" alt="美编编辑器"/></a>
+		    <a href="http://www.xunmang.com/" class="nav-item" target="_blank"><img src="zimeiti/gongju/迅蟒.png" alt="迅蟒"/></a>
+		    <a href="https://www.gaoding.com/" class="nav-item" target="_blank"><img src="zimeiti/gongju/稿定.png" alt="稿定编辑器"/></a>
+		    <a href="https://www.canva.cn/wechat-post-editor/" class="nav-item" target="_blank"><img src="zimeiti/gongju/可画.png" alt="可画编辑器"/></a>
+		    <a href="https://www.chuangkit.com/designtools/designindex" class="nav-item" target="_blank"><img src="zimeiti/gongju/创客贴.png" alt="创客贴"/></a>
+		    <a href="https://818ps.com/" class="nav-item" target="_blank"><img src="zimeiti/gongju/图怪兽.png" alt="图怪兽"/></a>
+		    <a href="https://www.logosc.cn/" class="nav-item" target="_blank"><img src="zimeiti/gongju/标小智.png" alt="标小智"/></a>
+		    <a href="https://tuitool.cn/" class="nav-item" target="_blank"><img src="zimeiti/gongju/推兔.png" alt="推兔多账号运营工具"/></a>
+		    <a href="https://www.wechatsync.com/" class="nav-item" target="_blank">文章同步助手</a>
+		    <a href="https://www.xhh.com/" class="nav-item" target="_blank"><img src="zimeiti/gongju/小火花.png" alt="小火花"/></a>
+		    <a href="https://www.yixiaoer.cn/" class="nav-item" target="_blank"><img src="zimeiti/gongju/蚁小二.png" alt="蚁小二"/></a>
+		    <a href="https://www.rmeibao.com/" class="nav-item" target="_blank"><img src="zimeiti/gongju/融媒宝.png" alt="融媒宝"/></a>
+		    <a href="https://jumeitong.sizhensoft.cn/" class="nav-item" target="_blank"><img src="zimeiti/gongju/聚媒通.png" alt="聚媒通"/></a>
+		    <a href="https://d.newrank.cn/" class="nav-item" target="_blank"><img src="zimeiti/gongju/新榜小豆芽.png" alt="新榜小豆芽"/></a>
+		    <a href="https://yimeizhushou.com/" class="nav-item" target="_blank"><img src="zimeiti/gongju/易媒助手.png" alt="易媒助手"/></a>
+				
+
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- 页脚 -->
+    <footer>
+      <div class="max-w-6xl mx-auto">
+        <p>© 2026 <a href="https://www.baomashenghuo.com" target="_blank" >宝妈生活-网址导航</a> | <a href="https://www.baomashenghuo.com" target="_blank" >www.baomashenghuo.com</a></p>
+        <p class="mt-1 text-sm">为您提供便捷的上网入口</p>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

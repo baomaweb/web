@@ -1,0 +1,239 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>文档 笔记 在线编辑,办公文档,协同编辑,多人协作 协同办公、组织管理、业务提效工具 网址导航</title>
+  <link href="styles/tailwind.min.2.css" rel="stylesheet">
+  <link href="styles/all.min.2.css" rel="stylesheet">
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+    .container-wrapper {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    .header-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 900px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    .main-content {
+      display: flex;
+      flex: 1;
+      width: 100%;
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 12px 0;
+    }
+    .sidebar {
+      width: 150px;
+      background-color: #f8fafc;
+      border-radius: 12px;
+      padding: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+      flex-shrink: 0;
+    }
+    .content-area {
+      width: 760px;
+      margin-left: 15px;
+      flex-shrink: 0;
+    }
+    .nav-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-gap: 10px;
+    }
+    .nav-item {
+      background: white;
+      border-radius: 12px;
+      padding: 10px;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+      transition: all 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .nav-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    }
+    .nav-icon {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #f1f5f9;
+      color: #64748b;
+      font-size: 14px;
+      flex-shrink: 0;
+    }
+    .ad-banner {
+      width: 480px;
+      height: 60px;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: bold;
+    }
+    @media (max-width: 1024px) {
+      .header-content {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px 20px;
+      }
+      .ad-banner {
+        width: 100%;
+        max-width: 300px;
+      }
+      .main-content {
+        padding: 20px 15px;
+      }
+      .sidebar {
+        width: 120px;
+        padding: 15px;
+      }
+      .content-area {
+        width: calc(100% - 160px);
+        margin-left: 20px;
+      }
+      .nav-grid {
+        grid-gap: 15px;
+      }
+      .nav-item {
+        padding: 15px;
+      }
+    }
+    @media (max-width: 768px) {
+      .main-content {
+        flex-direction: column;
+        align-items: center;
+      }
+      .sidebar {
+        width: 100%;
+        max-width: 150px;
+        margin-bottom: 20px;
+      }
+      .content-area {
+        width: 100%;
+        max-width: 760px;
+        margin-left: 0;
+      }
+    }
+  </style>
+</head>
+<body class="bg-gray-100">
+  <div class="container-wrapper">
+    <!-- 顶部区域 -->
+    <header class="py-6 bg-white shadow-sm flex-shrink-0">
+      <div class="header-content">
+
+        <div class="logo-area">
+          <a href="index-3.html"><img src="image/logo.png" width="176" height="60" alt="网址导航 首页"/></a>
+        </div>
+        
+        <div class="ad-area">
+          <div class="ad-banner">
+            <span>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6172791470588821"
+     crossorigin="anonymous"></script>
+<!-- 480x60 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:480px;height:60px"
+     data-ad-client="ca-pub-6172791470588821"
+     data-ad-slot="1674008001"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+
+    <main class="flex-1">
+      <div class="main-content">
+
+        <aside class="sidebar">
+          <h2 class="text-lg font-semibold mb-4 text-gray-700">分类导航</h2>
+          <ul class="space-y-2">
+            <li style="display: flex; align-items: center; gap: 5px; margin-bottom: 10px;">
+			<image src="image/star.png"><a href="index-3.html" target="_blank">首页</a>
+			<image src="image/star.png"><a href="xinwen-3.html" target="_blank">新闻</a>		
+            </li>
+            <li style="display: flex; align-items: center; gap: 5px; margin-bottom: 10px;">
+			<image src="image/star.png"><a href="shipin-3.html" target="_blank">视频</a>
+			<image src="image/star.png"><a href="yinyue-3.html" target="_blank">音乐</a>			
+            </li>
+            <li style="display: flex; align-items: center; gap: 5px; margin-bottom: 10px;">
+			<image src="image/star.png"><a href="shequ-3.html" target="_blank">社区</a>
+			<image src="image/star.png"><a href="youxi-3.html" target="_blank">游戏</a>			
+            </li>
+            <li style="display: flex; align-items: center; gap: 5px; margin-bottom: 10px;">
+			<image src="image/star.png"><a href="keji-3.html" target="_blank">科技</a>
+			<image src="image/star.png"><a href="caijing-3.html" target="_blank">财经</a>			
+            </li>
+            <li style="display: flex; align-items: center; gap: 5px; margin-bottom: 10px;">
+			<image src="image/star.png"><a href="youxiang-3.html" target="_blank">邮箱</a>
+			<image src="image/star.png"><a href="zhaopin-3.html" target="_blank">招聘</a>			
+            </li>
+            <li style="display: flex; align-items: center; gap: 5px; margin-bottom: 10px;">
+			<image src="image/star.png"><a href="sousuo-3.html" target="_blank">搜索</a>
+			<image src="image/star.png"><a href="zhaopin-3.html" target="_blank">招聘</a>			
+            </li>
+          </ul>
+          <hr>
+        </aside>
+
+        <section class="content-area">
+          <div class="nav-grid">
+      <a href="https://www.feishu.cn/" target="_blank" class="nav-item"><img src="yun/飞书.png" alt="飞书"/></a>
+      <a href="https://docs.qq.com/" target="_blank" class="nav-item"><img src="yun/腾讯文档.png" alt="腾讯文档"/></a>
+      <a href="https://www.yuque.com/" target="_blank" class="nav-item"><img src="yun/语雀.png"  alt="语雀"/></a>
+      <a href="https://www.kancloud.cn/" target="_blank" class="nav-item"><img src="yun/看云.png" alt="看云"/></a>
+      <a href="https://www.yinxiang.com/" target="_blank" class="nav-item"><img src="yun/印象笔记.png" alt="印象笔记"/></a>
+      <a href="https://note.youdao.com/" target="_blank" class="nav-item"><img src="yun/有道云笔记.jpg" alt="有道云笔记"/></a>
+      <a href="https://shimo.im/" target="_blank" class="nav-item"><img src="yun/石墨文档.png" alt="石墨文档"/></a>
+      <a href="https://www.onenote.com/" target="_blank" class="nav-item"><img src="yun/onenote.jpg"  alt="Onenote"/></a>
+      <a href="https://www.kuaizhan.com/" target="_blank" class="nav-item"><img src="yun/快站.png" alt="快站"/></a>
+      <a href="https://www.wiz.cn/zh-cn" target="_blank" class="nav-item"><img src="yun/为知笔记.png" alt="为知笔记"/></a>
+      <a href="https://www.notion.so/" target="_blank" class="nav-item"><img src="yun/notion.png" alt="notion."/></a>
+      <a href="https://xiezuocat.com/" target="_blank" class="nav-item"><img src="yun/写作猫.png" alt="写作猫."/></a>
+      <a href="https://www.kdocs.cn/" target="_blank" class="nav-item"><img src="yun/金山文档.jpg"  alt="金山文档"/></a>
+      <a href="https://www.zoho.com.cn/notebook/" target="_blank" class="nav-item"><img src="yun/notebook.png"  alt="notebook"/></a>
+
+
+
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- 页脚 -->
+    <footer>
+      <div class="max-w-6xl mx-auto">
+        <p>© 2026 <a href="https://www.baomashenghuo.com" target="_blank" >宝妈生活-网址导航</a> | <a href="https://www.baomashenghuo.com" target="_blank" >www.baomashenghuo.com</a></p>
+        <p class="mt-1 text-sm">为您提供便捷的上网入口</p>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
