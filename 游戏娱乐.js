@@ -110,8 +110,8 @@ function adCardHtml(variant) {
   h += '<!--\n';
   h += '      <ins class="adsbygoogle"\n';
   h += '           style="display:block;width:100%;height:100%"\n';
-  h += '           data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"\n';
-  h += '           data-ad-slot="XXXXXXXXXX"\n';
+  h += '           data-ad-client="ca-pub-6172791470588821"\n';
+  h += '           data-ad-slot="3745621701"\n';
   h += '           data-ad-format="auto"\n';
   h += '           data-full-width-responsive="true"></ins>\n';
   h += '      <script>(adsbygoogle = window.adsbygoogle || []).push({});</' + 'script>\n';
