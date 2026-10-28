@@ -121,17 +121,17 @@ function adCardHtml(variant) {
   var cls = 'ad-card';
   if (variant === 'span2') cls += ' ad-card--span2';
   else if (variant === 'span2x2') cls += ' ad-card--span2x2';
+  else if (variant === 'pos1') cls += ' ad-card--pos1';
+  else if (variant === 'pos2') cls += ' ad-card--pos2';
   var h = '';
   h += '<div class="' + cls + '">';
-  h += '<!--\n';
-  h += '      <ins class="adsbygoogle"\n';
-  h += '           style="display:block;width:100%;height:100%"\n';
-  h += '           data-ad-client="ca-pub-6172791470588821"\n';
-  h += '           data-ad-slot="3745621701"\n';
-  h += '           data-ad-format="auto"\n';
-  h += '           data-full-width-responsive="true"></ins>\n';
-  h += '      <script>(adsbygoogle = window.adsbygoogle || []).push({});</' + 'script>\n';
-  h += '-->';
+  h += '<ins class="adsbygoogle"\n';
+  h += '     style="display:block;width:100%;height:100%"\n';
+  h += '     data-ad-client="ca-pub-6172791470588821"\n';
+  h += '     data-ad-slot="3745621701"\n';
+  h += '     data-ad-format="auto"\n';
+  h += '     data-full-width-responsive="true"></ins>\n';
+  h += '<script>(adsbygoogle = window.adsbygoogle || []).push({});</' + 'script>';
   h += '</div>';
   return h;
 }
@@ -152,10 +152,10 @@ function renderCategoryPage() {
   var html = '';
   cat.sites.forEach(function(site, idx) {
     if (idx === 0) {
-      html += adCardHtml('span2');
+      html += adCardHtml('pos1');
     }
     if (idx === 5) {
-      html += adCardHtml('span2x2');
+      html += adCardHtml('pos2');
     }
 
     var favSrc = site.favicon || '';
