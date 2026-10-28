@@ -8,40 +8,29 @@ var CATEGORY = {
   "name": "搜索引擎",
   "icon": "search",
   "sites": [
+   { name: 'google ', url: 'https://www.google.com/', favicon: 'favicon/search/google.ico' },
+   { name: '百度 ', url: 'https://www.baidu.com/', favicon: 'favicon/search/baidu.ico' },
+   { name: 'bing ', url: 'https://cn.bing.com/', favicon: 'favicon/search/bing.ico' },
+   { name: '360搜索 ', url: 'https://www.so.com/', favicon: 'favicon/search/360.ico' },
+   { name: '搜狗 ', url: 'https://www.sogou.com/', favicon: 'favicon/search/搜狗.ico' },
+   { name: '搜搜 ', url: 'https://www.soso.com/', favicon: 'favicon/search/搜搜.ico' },
+   { name: '今日头条 ', url: 'https://www.toutiao.com/', favicon: 'favicon/search/toutiao.ico' },
+   { name: 'Naver ', url: 'https://www.naver.com/', favicon: 'favicon/search/naver.ico' },
+   { name: 'yandex ', url: 'https://ya.ru/', favicon: 'favicon/search/yandex.png' },
+   { name: 'Ceek ', url: 'http://www.ceek.jp/', favicon: 'favicon/search/ceek.ico' },
+   { name: '中国搜索 ', url: 'http://www.chinaso.com/', favicon: 'favicon/search/中国搜索.ico' },
+   { name: '新浪爱问 ', url: 'https://iask.sina.com.cn/', favicon: 'favicon/search/iask.ico' },
+   { name: 'hotbot ', url: 'https://www.hotbot.com/', favicon: 'favicon/search/hotbot.png' },
+   { name: 'looksmart ', url: 'https://www.looksmart.com/', favicon: 'favicon/search/looksmart.ico' },
     {
-      "name": "Google",
-      "url": "https://www.google.com",
-      "color": "#4285f4"
-    },
-    {
-      "name": "百度",
-      "url": "https://www.baidu.com",
+      "name": "lycos",
+      "url": "https://www.lycos.com",
       "color": "#2932e1"
-    },
-    {
-      "name": "Bing",
-      "url": "https://www.bing.com",
-      "color": "#0078d4"
     },
     {
       "name": "DuckDuckGo",
       "url": "https://duckduckgo.com",
       "color": "#de5833"
-    },
-    {
-      "name": "搜狗",
-      "url": "https://www.sogou.com",
-      "color": "#ff5a1f"
-    },
-    {
-      "name": "360搜索",
-      "url": "https://www.so.com",
-      "color": "#1bb968"
-    },
-    {
-      "name": "Yandex",
-      "url": "https://yandex.com",
-      "color": "#ff3333"
     },
     {
       "name": "Ecosia",

@@ -8,56 +8,42 @@ var CATEGORY = {
   "name": "开发者",
   "icon": "dev",
   "sites": [
-    {
-      "name": "GitHub",
-      "url": "https://github.com",
-      "color": "#24292e"
-    },
-    {
-      "name": "GitLab",
-      "url": "https://gitlab.com",
-      "color": "#fc6d26"
-    },
-    {
-      "name": "Stack Overflow",
-      "url": "https://stackoverflow.com",
-      "color": "#f48024"
-    },
-    {
-      "name": "MDN",
-      "url": "https://developer.mozilla.org",
-      "color": "#000000"
-    },
-    {
-      "name": "npm",
-      "url": "https://www.npmjs.com",
-      "color": "#cb3837"
-    },
-    {
-      "name": "Can I Use",
-      "url": "https://caniuse.com",
-      "color": "#0066ff"
-    },
-    {
-      "name": "CodePen",
-      "url": "https://codepen.io",
-      "color": "#000000"
-    },
-    {
-      "name": "LeetCode",
-      "url": "https://leetcode.cn",
-      "color": "#ffa116"
-    },
-    {
-      "name": "Gitee",
-      "url": "https://gitee.com",
-      "color": "#c71d23"
-    },
-    {
-      "name": "DevDocs",
-      "url": "https://devdocs.io",
-      "color": "#222"
-    }
+   { name: 'Github ', url: 'https://github.com/', favicon: 'favicon/dev/github.png' },
+   { name: 'Gitee ', url: 'https://gitee.com/', favicon: 'favicon/dev/gitee.ico' },
+   { name: 'Gitcode ', url: 'https://gitcode.com/', favicon: 'favicon/dev/gitcode.png' },
+   { name: '博客园 ', url: 'https://www.cnblogs.com/', favicon: 'favicon/dev/cnblogs.png' }, 
+   { name: '稀土掘金 ', url: 'https://www.juejin.cn/', favicon: 'favicon/dev/稀土掘金.png' }, 
+   { name: '51cto ', url: 'https://www.51cto.com/', favicon: 'favicon/dev/51cto.ico' },
+   { name: 'Gitlab ', url: 'https://gitlab.cn/', favicon: 'favicon/dev/gitlab.png' },
+   { name: 'Azure ', url: 'https://azure.microsoft.com/', favicon: 'favicon/dev/azure.ico' }, 
+   { name: 'oracle ', url: 'https://www.oracle.com/cn/', favicon: 'favicon/dev/oracle.ico' },
+   { name: 'CSDN ', url: 'https://www.csdn.net/', favicon: 'favicon/dev/csdn.ico' },  
+   { name: '思否 ', url: 'https://segmentfault.com/', favicon: 'favicon/dev/思否.ico' }, 
+   { name: '慕课网 ', url: 'https://www.imooc.com/', favicon: 'favicon/dev/慕课网.ico' },
+   { name: 'oschina ', url: 'https://www.oschina.net/', favicon: 'favicon/dev/oschina.ico' },
+   { name: 'IT之家 ', url: 'https://www.ithome.com/', favicon: 'favicon/dev/IT之家.png' }, 
+   { name: '虎嗅网 ', url: 'https://www.huxiu.com/', favicon: 'favicon/dev/虎嗅网.ico' },
+   { name: '钛媒体 ', url: 'https://www.tmtpost.com/', favicon: 'favicon/dev/钛媒体.ico' }, 
+   { name: '雷锋网 ', url: 'https://www.leiphone.com/', favicon: 'favicon/dev/雷锋网.ico' },
+   { name: '威锋网 ', url: 'https://www.feng.com/', favicon: 'favicon/dev/威锋网.ico' },
+   { name: '太平洋科技 ', url: 'https://www.pconline.com.cn', favicon: 'favicon/dev/太平洋科技.ico' },
+   { name: ' 中关村在线', url: 'https://www.zol.com.cn', favicon: 'favicon/dev/中关村在线.png' },
+   { name: '硅谷网 ', url: 'http://www.guigu.org/', favicon: 'favicon/dev/硅谷网.ico' },
+   { name: '少数派 ', url: 'https://sspai.com/', favicon: 'favicon/dev/少数派.ico' },
+   { name: '极客公园 ', url: 'https://www.geekpark.net/', favicon: 'favicon/dev/极客公园.png' },
+   { name: '电脑报', url: 'https://www.icpcw.com', color: '#161823' },
+   { name: 'typecho', url: 'https://typecho.org', color: '#ff5f00' },
+   { name: 'wordpress ', url: 'https://wordpress.org/', favicon: 'favicon/dev/wordpress.png' }, 
+   { name: 'hexo ', url: 'https://hexo.io/zh-cn/', favicon: 'favicon/dev/hexo.png' },
+   { name: 'halo ', url: 'https://www.halo.run/', favicon: 'favicon/dev/halo.ico' },
+   { name: 'npmjs ', url: 'https://www.npmjs.com', favicon: 'favicon/dev/npmjs.png' },
+   { name: 'Can I Use ', url: 'https://caniuse.com', favicon: 'favicon/dev/caniuse.png' },
+   { name: 'Stack Overflow ', url: 'https://stackoverflow.com', favicon: 'favicon/dev/stackoverflow.png' },
+   { name: 'mozilla ', url: 'https://developer.mozilla.org',favicon: 'favicon/dev/mozilla.png' },
+   { name: 'CodePen ', url: 'https://codepen.io',favicon: 'favicon/dev/codepen.ico' },
+   { name: 'LeetCode ', url: 'https://leetcode.cn',favicon: 'favicon/dev/leetcode.ico' },
+   { name: 'DevDocs ', url: 'https://devdocs.io',favicon: 'favicon/dev/devdocs.ico' },
+
   ]
 };
 
