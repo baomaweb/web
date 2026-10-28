@@ -48,17 +48,19 @@ function adCardHtml(variant) {
   var cls = 'ad-card';
   if (variant === 'span2') cls += ' ad-card--span2';
   else if (variant === 'span2x2') cls += ' ad-card--span2x2';
+  else if (variant === 'colspan2') cls += ' ad-card--colspan2';
+  else if (variant === 'pos1') cls += ' ad-card--pos1';
+  else if (variant === 'pos2') cls += ' ad-card--pos2';
   var h = '';
   h += '<div class="' + cls + '">';
-  h += '<!--\n';
-  h += '      <ins class="adsbygoogle"\n';
-  h += '           style="display:block;width:100%;height:100%"\n';
-  h += '           data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"\n';
-  h += '           data-ad-slot="XXXXXXXXXX"\n';
-  h += '           data-ad-format="auto"\n';
-  h += '           data-full-width-responsive="true"></ins>\n';
-  h += '      <script>(adsbygoogle = window.adsbygoogle || []).push({});</' + 'script>\n';
-  h += '-->';
+  h += '<!-- 部署时请将 ca-pub-XXXXXXXXXXXXXXXX 替换为你的真实发布商 ID，将 data-ad-slot 替换为 AdSense 后台创建的广告单元 ID -->\n';
+  h += '<ins class="adsbygoogle"\n';
+  h += '     style="display:block;width:100%;height:100%"\n';
+  h += '     data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"\n';
+  h += '     data-ad-slot="XXXXXXXXXX"\n';
+  h += '     data-ad-format="auto"\n';
+  h += '     data-full-width-responsive="true"></ins>\n';
+  h += '<script>(adsbygoogle = window.adsbygoogle || []).push({});</' + 'script>\n';
   h += '</div>';
   return h;
 }
@@ -72,13 +74,13 @@ function renderHome() {
   var adInserted2 = false;
 
   CATEGORIES.forEach(function(cat, idx) {
-    // 第 1 个 AdSense 网格卡片：第 7 个位置（第 2 行第 1 列）
+    // 第 1 个 AdSense 网格卡片：第 2 行左侧，横向占 2 格（第 2 行第 1-2 列）
     if (idx === 6) {
-      html += adCardHtml();
+      html += adCardHtml('colspan2');
     }
-    // 第 2 个 AdSense 网格卡片：第 14 个位置（第 3 行第 2 列），与第 1 个不相邻
-    if (idx === 13) {
-      html += adCardHtml();
+    // 第 2 个 AdSense 网格卡片：第 4 行最右侧横向占 2 格（第 4 行第 5-6 列），与第 1 个不相邻
+    if (idx === 20) {
+      html += adCardHtml('colspan2');
     }
 
     var iconSvg = ICON_SVG[cat.icon] || '';
@@ -89,62 +91,6 @@ function renderHome() {
     html += '<span class="cat-card-tint" style="background:' + tintColor + '"></span>';
     html += '<div class="cat-card-icon">' + iconSvg + '</div>';
     html += '<div class="cat-card-name">' + cat.name + '</div>';
-    html += '</a>';
-  });
-  grid.innerHTML = html;
-}
-
-// ==================== Category Page Render ====================
-function renderCategoryPage() {
-  var params = new URLSearchParams(window.location.search);
-  var catId = params.get('id') || '';
-  var cat = null;
-  for (var i = 0; i < CATEGORIES.length; i++) {
-    if (CATEGORIES[i].id === catId) { cat = CATEGORIES[i]; break; }
-  }
-  if (!cat) {
-    document.getElementById('headerTitle').textContent = '\u5206\u7c7b\u672a\u627e\u5230';
-    document.getElementById('catDetailHeader').innerHTML = '<span class="cat-detail-title">\u5206\u7c7b\u672a\u627e\u5230</span><span class="cat-detail-count"><a href="index.html" style="color:var(--accent);text-decoration:none;">\u8fd4\u56de\u9996\u9875</a></span>';
-    return;
-  }
-
-  document.title = cat.name + ' - NavHub \u79d1\u6280\u5bfc\u822a';
-  document.getElementById('headerTitle').textContent = cat.name;
-
-  var iconSvg = ICON_SVG[cat.icon] || '';
-  var headerHtml = '';
-  headerHtml += '<div class="cat-detail-icon">' + iconSvg + '</div>';
-  headerHtml += '<span class="cat-detail-title">' + cat.name + '</span>';
-  headerHtml += '<span class="cat-detail-count">' + cat.sites.length + ' \u4e2a\u7f51\u7ad9</span>';
-  document.getElementById('catDetailHeader').innerHTML = headerHtml;
-
-  var grid = document.getElementById('siteGrid');
-  var html = '';
-  cat.sites.forEach(function(site, idx) {
-    // 第 1 个 AdSense 网格卡片：在第 1 个网站之前插入（跨上下2格，占第 1 列第 1-2 行）
-    if (idx === 0) {
-      html += adCardHtml('span2');
-    }
-    // 第 2 个 AdSense 网格卡片：在第 6 个网站之后插入（跨上下左右 2x2 四格，占第 4-5 列第 2-3 行），与第 1 个不相邻
-    if (idx === 5) {
-      html += adCardHtml('span2x2');
-    }
-
-    var favSrc = site.favicon || '';
-    var fallbackColor = site.color || '#666';
-    var initial = getInitial(site.name);
-
-    html += '<a href="' + site.url + '" target="_blank" rel="noopener" class="site-item">';
-    html += '<div class="site-favicon">';
-    if (favSrc) {
-      html += '<img src="' + favSrc + '" alt="" loading="lazy" onerror="this.style.display=\'none\';var fb=this.parentElement.querySelector(\'.site-favicon-fallback\');if(fb)fb.style.display=\'flex\'">';
-      html += '<div class="site-favicon-fallback" style="display:none;background:' + fallbackColor + '">' + initial + '</div>';
-    } else {
-      html += '<div class="site-favicon-fallback" style="display:flex;background:' + fallbackColor + '">' + initial + '</div>';
-    }
-    html += '</div>';
-    html += '<span class="site-name">' + site.name + '</span>';
-    html += '<span class="site-arrow">&#8599;</span>';
     html += '</a>';
   });
   grid.innerHTML = html;

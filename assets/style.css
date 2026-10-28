@@ -312,9 +312,16 @@ body {
   opacity: 0.5;
 }
 .ad-card ins.adsbygoogle {
+  /* 绝对定位于格子内部：AdSense 运行时会给 ins 注入 inline 高度（如 600px），
+     若按普通流渲染会把 grid 行高撑大、导致广告格子变形。
+     脱离文档流后，格子尺寸完全由 grid 轨道决定，广告内容只负责填充。 */
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   display: block;
+  border: 0;
 }
 
 /* AdSense grid card in cat-grid (home) - single cell, square */
@@ -383,19 +390,7 @@ body {
 .site-item:active { transform: translateY(0); }
 
 /* AdSense grid card in site-grid - variant 1: spans 2 rows (vertical) */
-.site-grid .ad-card--span2 {
-  grid-row: span 2;
-  aspect-ratio: auto;
-  min-height: 100%;
-}
-
-/* AdSense grid card in site-grid - variant 2: spans 2x2 (4 cells) */
-.site-grid .ad-card--span2x2 {
-  grid-row: span 2;
-  grid-column: span 2;
-  aspect-ratio: auto;
-  min-height: 100%;
-}
+/* （已废弃：分类页使用 pos1/pos2 显式定位，不再使用 span2/span2x2 variant） */
 
 /* AdSense grid card in cat-grid (home) - single cell, square */
 .cat-grid .ad-card {
@@ -539,4 +534,51 @@ body {
 :focus-visible {
   outline: 2px solid var(--accent);
   outline-offset: 2px;
+}
+
+/* ==================== AdSense Placement ==================== */
+/* Home cat-grid: ad card spans 2 columns horizontally (row 2 left / row 4 right).
+   Height is stretched by the grid to exactly one row, matching square cat-cards. */
+.cat-grid .ad-card--colspan2 {
+  grid-column: span 2;
+  aspect-ratio: auto;
+  align-self: stretch;
+  min-height: 0;
+}
+
+/* Category site-grid: ad #1 top-left 2 rows x 2 cols (rows 1-2, cols 1-2).
+   Each occupied cell matches the regular site-item cell size (like row 3). */
+.site-grid .ad-card--pos1 {
+  grid-row: 1 / span 2;
+  grid-column: 1 / span 2;
+  aspect-ratio: auto;
+  align-self: stretch;
+  min-height: 0;
+}
+
+/* Category site-grid: ad #2 rows 3-4, rightmost 2 cols (cols 4-5) */
+.site-grid .ad-card--pos2 {
+  grid-row: 3 / span 2;
+  grid-column: 4 / span 2;
+  aspect-ratio: auto;
+  align-self: stretch;
+  min-height: 0;
+}
+
+/* Hide placeholder label once a real AdSense unit is rendered */
+.ad-slot:has(ins.adsbygoogle)::before,
+.ad-card:has(ins.adsbygoogle)::before {
+  content: none;
+}
+
+/* ==================== Responsive Ad Degradation ==================== */
+/* Must come AFTER .ad-card--pos1/pos2 definitions so same-specificity rules
+   here win on narrow screens. Full-width row keeps cells on defined tracks,
+   avoiding implicit-column overflow when the grid has 3/2/1 columns. */
+@media (max-width: 768px) {
+  .site-grid .ad-card--pos1,
+  .site-grid .ad-card--pos2 {
+    grid-row: auto;
+    grid-column: 1 / -1;
+  }
 }
