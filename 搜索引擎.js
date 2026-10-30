@@ -104,7 +104,7 @@ function adCardHtml(variant) {
   h += '     data-ad-slot="3745621701"\n';
   h += '     data-ad-format="auto"\n';
   h += '     data-full-width-responsive="true"></ins>\n';
-  h += '<script>(adsbygoogle = window.adsbygoogle || []).push({});</' + 'script>';
+
   h += '</div>';
   return h;
 }
