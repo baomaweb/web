@@ -53,14 +53,14 @@ function adCardHtml(variant) {
   else if (variant === 'pos2') cls += ' ad-card--pos2';
   var h = '';
   h += '<div class="' + cls + '">';
-  h += '<!-- 部署时请将 ca-pub-XXXXXXXXXXXXXXXX 替换为你的真实发布商 ID，将 data-ad-slot 替换为 AdSense 后台创建的广告单元 ID -->\n';
+  h += '<!-- 部署时请将 ca-pub-6172791470588821 替换为你的真实发布商 ID，将 data-ad-slot 替换为 AdSense 后台创建的广告单元 ID -->\n';
   h += '<ins class="adsbygoogle"\n';
   h += '     style="display:block;width:100%;height:100%"\n';
-  h += '     data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"\n';
-  h += '     data-ad-slot="XXXXXXXXXX"\n';
+  h += '     data-ad-client="ca-pub-6172791470588821"\n';
+  h += '     data-ad-slot="3745621701"\n';
   h += '     data-ad-format="auto"\n';
   h += '     data-full-width-responsive="true"></ins>\n';
-  h += '<script>(adsbygoogle = window.adsbygoogle || []).push({});</' + 'script>\n';
+
   h += '</div>';
   return h;
 }
@@ -94,7 +94,19 @@ function renderHome() {
     html += '</a>';
   });
   grid.innerHTML = html;
+  pushAllAds();
 }
 
 // ==================== Init ====================
 initTheme();
+
+
+// ==================== AdSense: render dynamic ads ====================
+function pushAllAds() {
+  var nodes = document.querySelectorAll('ins.adsbygoogle');
+  for (var i = 0; i < nodes.length; i++) {
+    if (!nodes[i].getAttribute('data-adsbygoogle-status')) {
+      (window.adsbygoogle = window.adsbygoogle || []).push({});
+    }
+  }
+}
