@@ -540,36 +540,35 @@ body {
 
 /* ==================== AdSense Placement ==================== */
 /* Home cat-grid: ad card spans 2 columns horizontally (row 2 left / row 4 right).
-   min-height: 252px => 内容区实际 250px（1px dashed 边框 + box-sizing:border-box），
-   匹配 AdSense 常见 300x250 自适应单元。
-   广告高度必须大于等于真实广告高度，否则会被 .ad-card 的 overflow:hidden 裁剪成部分显示；
-   少这 2px 余量会把广告底边裁掉。 */
+   Horizontal banner form: min-height 102px => 内容区实际 100px
+   （1px dashed 边框 + box-sizing:border-box），匹配 320x100 / 300x100 等横向横幅，
+   不再使用 300x250 方形，避免网格高度过大。
+   align-self: start => 广告格不跟随同行卡片行高拉伸，始终是矮横条。 */
 .cat-grid .ad-card--colspan2 {
   grid-column: span 2;
   aspect-ratio: auto;
-  align-self: stretch;
-  min-height: 252px;
+  align-self: start;
+  min-height: 102px;
 }
 
-/* Category site-grid: ad #1 top-left 2 rows x 2 cols (rows 1-2, cols 1-2).
-   min-height: 282px => 内容区实际 280px（同上 2px 边框余量），
-   匹配 AdSense 常见 336x280 自适应单元（跨 2 行合计），
-   避免广告被裁剪成部分显示。 */
+/* Category site-grid: ad #1 top-left, 1 row x 2 cols (row 1, cols 1-2).
+   Horizontal banner form: min-height 102px => 内容区实际 100px，
+   匹配 320x100 / 300x100 等横向横幅，不再跨 2 行占用高矩形，网格高度受控。 */
 .site-grid .ad-card--pos1 {
-  grid-row: 1 / span 2;
+  grid-row: 1;
   grid-column: 1 / span 2;
   aspect-ratio: auto;
-  align-self: stretch;
-  min-height: 282px;
+  align-self: start;
+  min-height: 102px;
 }
 
-/* Category site-grid: ad #2 rows 3-4, rightmost 2 cols (cols 4-5) */
+/* Category site-grid: ad #2 row 3, rightmost 2 cols (cols 4-5) */
 .site-grid .ad-card--pos2 {
-  grid-row: 3 / span 2;
+  grid-row: 3;
   grid-column: 4 / span 2;
   aspect-ratio: auto;
-  align-self: stretch;
-  min-height: 282px;
+  align-self: start;
+  min-height: 102px;
 }
 
 /* Hide placeholder label once a real AdSense unit is rendered */
