@@ -82,24 +82,40 @@ function initTheme() {
   }
 }
 
-// ==================== AdSense ====================
-function adCardHtml(variant) {
+var CATEGORY_AD_UNITS = {
+  client: 'ca-pub-6172791470588821',
+  pos1: '4869723184',
+  pos2: '5751560015',
+  bottom: '9862195410'
+};
+
+function categoryAdCardHtml(variant) {
   var cls = 'ad-card';
-  if (variant === 'span2') cls += ' ad-card--span2';
-  else if (variant === 'span2x2') cls += ' ad-card--span2x2';
-  else if (variant === 'pos1') cls += ' ad-card--pos1';
-  else if (variant === 'pos2') cls += ' ad-card--pos2';
+  var slotKey = 'pos1';
+  if (variant === 'pos1') { cls += ' ad-card--pos1'; slotKey = 'pos1'; }
+  else if (variant === 'pos2') { cls += ' ad-card--pos2'; slotKey = 'pos2'; }
   var h = '';
   h += '<div class="' + cls + '">';
   h += '<ins class="adsbygoogle"\n';
   h += '     style="display:block;width:100%;height:100%"\n';
-  h += '     data-ad-client="ca-pub-6172791470588821"\n';
-  h += '     data-ad-slot="3745621701"\n';
+  h += '     data-ad-client="' + CATEGORY_AD_UNITS.client + '"\n';
+  h += '     data-ad-slot="' + CATEGORY_AD_UNITS[slotKey] + '"\n';
   h += '     data-ad-format="auto"\n';
   h += '     data-full-width-responsive="true"></ins>\n';
 
   h += '</div>';
   return h;
+}
+
+
+// ==================== AdSense: render dynamic ads ====================
+function pushAllAds() {
+  var nodes = document.querySelectorAll('ins.adsbygoogle');
+  for (var i = 0; i < nodes.length; i++) {
+    if (!nodes[i].getAttribute('data-adsbygoogle-status')) {
+      (window.adsbygoogle = window.adsbygoogle || []).push({});
+    }
+  }
 }
 
 // ==================== Render ====================
@@ -118,10 +134,10 @@ function renderCategoryPage() {
   var html = '';
   cat.sites.forEach(function(site, idx) {
     if (idx === 0) {
-      html += adCardHtml('pos1');
+      html += categoryAdCardHtml('pos1');
     }
     if (idx === 5) {
-      html += adCardHtml('pos2');
+      html += categoryAdCardHtml('pos2');
     }
 
     var favSrc = site.favicon || '';
@@ -142,6 +158,7 @@ function renderCategoryPage() {
     html += '</a>';
   });
   grid.innerHTML = html;
+  pushAllAds();
 }
 
 // ==================== Init ====================
