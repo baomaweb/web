@@ -43,24 +43,23 @@ function initTheme() {
   }
 }
 
-// ==================== AdSense 网格卡片模板 ====================
-function adCardHtml(variant) {
-  var cls = 'ad-card';
-  if (variant === 'span2') cls += ' ad-card--span2';
-  else if (variant === 'span2x2') cls += ' ad-card--span2x2';
-  else if (variant === 'colspan2') cls += ' ad-card--colspan2';
-  else if (variant === 'pos1') cls += ' ad-card--pos1';
-  else if (variant === 'pos2') cls += ' ad-card--pos2';
+
+var HOME_AD_UNITS = {
+  client: 'ca-pub-6172791470588821',
+  grid1: '5061294877',
+  grid2: '1053767107',
+  bottom: '9874637852'
+};
+
+function homeAdCardHtml(slotKey) {
   var h = '';
-  h += '<div class="' + cls + '">';
-  h += '<!-- 部署时请将 ca-pub-6172791470588821 替换为你的真实发布商 ID，将 data-ad-slot 替换为 AdSense 后台创建的广告单元 ID -->\n';
+  h += '<div class="ad-card ad-card--colspan2">';
   h += '<ins class="adsbygoogle"\n';
-  h += '     style="display:block;width:300px;height:60px"\n';
-  h += '     data-ad-client="ca-pub-6172791470588821"\n';
-  h += '     data-ad-slot="3745621701"\n';
+  h += '     style="display:block;width:100%;height:100%"\n';
+  h += '     data-ad-client="' + HOME_AD_UNITS.client + '"\n';
+  h += '     data-ad-slot="' + HOME_AD_UNITS[slotKey] + '"\n';
   h += '     data-ad-format="auto"\n';
   h += '     data-full-width-responsive="true"></ins>\n';
-
   h += '</div>';
   return h;
 }
@@ -76,11 +75,11 @@ function renderHome() {
   CATEGORIES.forEach(function(cat, idx) {
     // 第 1 个 AdSense 网格卡片：第 2 行左侧，横向占 2 格（第 2 行第 1-2 列）
     if (idx === 6) {
-      html += adCardHtml('colspan2');
+      html += homeAdCardHtml('grid1');
     }
     // 第 2 个 AdSense 网格卡片：第 4 行最右侧横向占 2 格（第 4 行第 5-6 列），与第 1 个不相邻
     if (idx === 20) {
-      html += adCardHtml('colspan2');
+      html += homeAdCardHtml('grid2');
     }
 
     var iconSvg = ICON_SVG[cat.icon] || '';

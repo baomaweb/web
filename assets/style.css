@@ -184,7 +184,9 @@ body {
 /* ==================== Ad Slots ==================== */
 .ad-slot {
   margin: 20px auto;
-  min-height: 90px;
+  /* min-height 92px => 内容区实际 90px（1px dashed 边框 + box-sizing:border-box），
+     正好容纳 970x90 / 728x90 等常见横幅，避免底边被裁 2px */
+  min-height: 92px;
   background: var(--ad-bg);
   border: 1px dashed var(--ad-border);
   border-radius: 12px;
@@ -508,7 +510,7 @@ body {
   .site-name { font-size: 12px; }
   .site-arrow { display: none; }
   .footer { font-size: 11px; padding: 20px 16px; }
-  .ad-slot { min-height: 80px; }
+  .ad-slot { min-height: 82px; }
 }
 
 @media (max-width: 360px) {
@@ -538,22 +540,27 @@ body {
 
 /* ==================== AdSense Placement ==================== */
 /* Home cat-grid: ad card spans 2 columns horizontally (row 2 left / row 4 right).
-   Height is stretched by the grid to exactly one row, matching square cat-cards. */
+   min-height: 252px => 内容区实际 250px（1px dashed 边框 + box-sizing:border-box），
+   匹配 AdSense 常见 300x250 自适应单元。
+   广告高度必须大于等于真实广告高度，否则会被 .ad-card 的 overflow:hidden 裁剪成部分显示；
+   少这 2px 余量会把广告底边裁掉。 */
 .cat-grid .ad-card--colspan2 {
   grid-column: span 2;
   aspect-ratio: auto;
   align-self: stretch;
-  min-height: 0;
+  min-height: 252px;
 }
 
 /* Category site-grid: ad #1 top-left 2 rows x 2 cols (rows 1-2, cols 1-2).
-   Each occupied cell matches the regular site-item cell size (like row 3). */
+   min-height: 282px => 内容区实际 280px（同上 2px 边框余量），
+   匹配 AdSense 常见 336x280 自适应单元（跨 2 行合计），
+   避免广告被裁剪成部分显示。 */
 .site-grid .ad-card--pos1 {
   grid-row: 1 / span 2;
   grid-column: 1 / span 2;
   aspect-ratio: auto;
   align-self: stretch;
-  min-height: 0;
+  min-height: 282px;
 }
 
 /* Category site-grid: ad #2 rows 3-4, rightmost 2 cols (cols 4-5) */
@@ -562,7 +569,7 @@ body {
   grid-column: 4 / span 2;
   aspect-ratio: auto;
   align-self: stretch;
-  min-height: 0;
+  min-height: 282px;
 }
 
 /* Hide placeholder label once a real AdSense unit is rendered */
@@ -574,11 +581,15 @@ body {
 /* ==================== Responsive Ad Degradation ==================== */
 /* Must come AFTER .ad-card--pos1/pos2 definitions so same-specificity rules
    here win on narrow screens. Full-width row keeps cells on defined tracks,
-   avoiding implicit-column overflow when the grid has 3/2/1 columns. */
+   avoiding implicit-column overflow when the grid has 3/2/1 columns.
+   min-height: 102px => 内容区实际 100px，容纳移动端常见的 320x100 横向横幅；
+   同时避免桌面 252/282px 的矩形广告格在窄屏占 2 行卡片高度、挤压网格。 */
 @media (max-width: 768px) {
   .site-grid .ad-card--pos1,
-  .site-grid .ad-card--pos2 {
+  .site-grid .ad-card--pos2,
+  .cat-grid .ad-card--colspan2 {
     grid-row: auto;
     grid-column: 1 / -1;
+    min-height: 102px;
   }
 }
