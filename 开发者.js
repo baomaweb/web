@@ -105,7 +105,7 @@ function categoryAdCardHtml(variant) {
   h += '     style="display:block;width:100%;height:100%"\n';
   h += '     data-ad-client="' + CATEGORY_AD_UNITS.client + '"\n';
   h += '     data-ad-slot="' + CATEGORY_AD_UNITS[slotKey] + '"\n';
-  h += '     data-ad-format="auto"\n';
+  h += '     data-ad-format="horizontal"\n';
   h += '     data-full-width-responsive="true"></ins>\n';
 
   h += '</div>';
