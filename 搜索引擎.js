@@ -22,31 +22,12 @@ var CATEGORY = {
    { name: '新浪爱问 ', url: 'https://iask.sina.com.cn/', favicon: 'favicon/search/iask.ico' },
    { name: 'hotbot ', url: 'https://www.hotbot.com/', favicon: 'favicon/search/hotbot.png' },
    { name: 'looksmart ', url: 'https://www.looksmart.com/', favicon: 'favicon/search/looksmart.ico' },
-    {
-      "name": "lycos",
-      "url": "https://www.lycos.com",
-      "color": "#2932e1"
-    },
-    {
-      "name": "DuckDuckGo",
-      "url": "https://duckduckgo.com",
-      "color": "#de5833"
-    },
-    {
-      "name": "Ecosia",
-      "url": "https://www.ecosia.org",
-      "color": "#00a0a0"
-    },
-    {
-      "name": "Startpage",
-      "url": "https://www.startpage.com",
-      "color": "#6526d3"
-    },
-    {
-      "name": "Brave Search",
-      "url": "https://search.brave.com",
-      "color": "#fb542b"
-    }
+   { name: 'lycos ', url: 'https://www.lycos.com', favicon: 'favicon/search/lycos.png' },
+   { name: 'DuckDuckGo ', url: 'https://duckduckgo.com', favicon: 'favicon/search/duckduckgo.ico' },
+   { name: 'Ecosia ', url: 'https://www.ecosia.org', favicon: 'favicon/search/ecosia.ico' },
+   { name: 'Startpage ', url: 'https://www.startpage.com', favicon: 'favicon/search/startpage.ico' },
+   { name: 'Brave Search ', url: 'https://search.brave.com', favicon: 'favicon/search/brave.png' },
+
   ]
 };
 
