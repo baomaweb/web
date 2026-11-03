@@ -8,56 +8,33 @@ var CATEGORY = {
   "name": "邮箱服务",
   "icon": "email",
   "sites": [
-    {
-      "name": "Gmail",
-      "url": "https://mail.google.com",
-      "color": "#ea4335"
-    },
-    {
-      "name": "QQ邮箱",
-      "url": "https://mail.qq.com",
-      "color": "#12b7f0"
-    },
-    {
-      "name": "网易邮箱",
-      "url": "https://mail.163.com",
-      "color": "#ff3333"
-    },
-    {
-      "name": "Outlook",
-      "url": "https://outlook.live.com",
-      "color": "#0078d4"
-    },
-    {
-      "name": "126邮箱",
-      "url": "https://mail.126.com",
-      "color": "#ff6600"
-    },
-    {
-      "name": "新浪邮箱",
-      "url": "https://mail.sina.com.cn",
-      "color": "#ff0000"
-    },
-    {
-      "name": "139邮箱",
-      "url": "https://mail.10086.cn",
-      "color": "#00a0a0"
-    },
-    {
-      "name": "Yahoo Mail",
-      "url": "https://mail.yahoo.com",
-      "color": "#6001d2"
-    },
-    {
-      "name": "ProtonMail",
-      "url": "https://proton.me/mail",
-      "color": "#6d4aff"
-    },
-    {
-      "name": "Zoho Mail",
-      "url": "https://www.zoho.com/mail",
-      "color": "#c8202f"
-    }
+  
+ 
+   { name: '126邮箱', url: 'https://mail.126.com', favicon: 'favicon/email/126.ico' },
+   { name: '163邮箱', url: 'https://mail.163.com', favicon: 'favicon/email/163.ico' },
+   { name: 'QQ邮箱', url: 'https://mail.qq.com', favicon: 'favicon/email/qq邮箱.png' },
+   { name: 'Gmail', url: 'https://mail.google.com', favicon: 'favicon/email/gmail.ico' },
+   { name: 'Outlook', url: 'https://outlook.live.com', favicon: 'favicon/email/outlook.ico' },
+   { name: '新浪邮箱', url: 'https://mail.sina.com.cn', favicon: 'favicon/email/新浪邮箱.ico' },
+   { name: '搜狐邮箱', url: 'https://mail.sohu.com/', favicon: 'favicon/email/sohu邮箱.png' },
+   { name: 'yeah邮箱', url: 'https://mail.163.com', favicon: 'favicon/email/yeah.ico' },
+   { name: '139邮箱', url: 'https://mail.10086.cn', favicon: 'favicon/email/139邮箱.ico' },
+   { name: '21cn邮箱', url: 'https://mail.21cn.com/', favicon: 'favicon/email/21cn邮箱.ico' },
+   { name: 'tom邮箱', url: 'https://mail.tom.com/', favicon: 'favicon/email/tom邮箱.ico' },
+   { name: '263邮箱', url: 'https://mail.263.net/', favicon: 'favicon/email/263邮箱.ico' },
+   { name: '阿里邮箱', url: 'https://mail.aliyun.com/', favicon: 'favicon/email/阿里邮箱.ico' },
+   { name: '阿里企业邮箱', url: 'https://qiye.aliyun.com/', favicon: 'favicon/email/阿里企业邮箱.ico' },
+   { name: '新浪企业邮箱', url: 'https://mail.sina.net/', favicon: 'favicon/email/新浪企业邮箱.ico' },
+   { name: '网易企业邮箱', url: 'https://ym.163.com', favicon: 'favicon/email/网易企业邮箱.ico' },
+   
+   
+   
+   
+   { name: 'Yahoo Mail', url: 'https://mail.yahoo.com', favicon: 'favicon/email/yahoo邮箱.ico' },
+   { name: 'ProtonMail', url: 'https://proton.me/mail', favicon: 'favicon/email/proton.png' },
+   { name: 'Zoho Mail', url: 'https://www.zoho.com/mail', favicon: 'favicon/email/zoho.ico' },
+
+
   ]
 };
 
