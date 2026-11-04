@@ -8,46 +8,25 @@ var CATEGORY = {
   "name": "常用工具",
   "icon": "tools",
   "sites": [
-    {
-      "name": "百度翻译",
-      "url": "https://fanyi.baidu.com",
-      "color": "#2932e1"
-    },
-    {
-      "name": "DeepL",
-      "url": "https://www.deepl.com",
-      "color": "#0f2d52"
-    },
-    {
-      "name": "菜鸟教程",
-      "url": "https://www.runoob.com",
-      "color": "#3cb371"
-    },
-    {
-      "name": "草料二维码",
-      "url": "https://cli.im",
-      "color": "#00b38a"
-    },
-    {
-      "name": "Photopea",
-      "url": "https://www.photopea.com",
-      "color": "#18c520"
-    },
-    {
-      "name": "TinyPNG",
-      "url": "https://tinypng.com",
-      "color": "#22b14c"
-    },
-    {
-      "name": "Wolfram Alpha",
-      "url": "https://www.wolframalpha.com",
-      "color": "#dd1100"
-    },
-    {
-      "name": "removebg",
-      "url": "https://www.remove.bg",
-      "color": "#5a2de8"
-    },
+   { name: '剪映', url: 'https://www.capcut.cn', favicon: 'favicon/tools/剪映.png' },
+   { name: '百度翻译', url: 'https://www.capcut.cn', favicon: 'favicon/tools/百度翻译.ico' },
+   { name: '有道翻译', url: 'https://fanyi.youdao.com', favicon: 'favicon/tools/有道翻译.png' },
+   { name: 'DeepL', url: 'https://www.deepl.com', favicon: 'favicon/tools/deepl.png' },
+   { name: 'Google翻译', url: 'https://translate.google.com', favicon: 'favicon/tools/Google翻译.ico' },
+   { name: '阿里翻译', url: 'https://translate.alibaba.com', favicon: 'favicon/tools/阿里翻译.ico' },
+   { name: '必应翻译', url: 'https://www.bing.com/translator', favicon: 'favicon/tools/bing翻译.png' },
+   
+   
+   
+   { name: '草料二维码', url: 'https://cli.im', favicon: 'favicon/tools/草料.ico' },
+   { name: 'TinyPNG', url: 'https://tinypng.com', favicon: 'favicon/tools/tinypng.png' },
+   { name: 'removebg', url: 'https://www.remove.bg', favicon: 'favicon/tools/remove.ico' },
+   { name: 'Photopea', url: 'https://www.photopea.com', favicon: 'favicon/tools/photopea.png' },
+
+
+
+
+
     {
       "name": "腾讯文档",
       "url": "https://docs.qq.com",
