@@ -8,59 +8,31 @@ var CATEGORY = {
   "name": "开发文档",
   "icon": "devdocs",
   "sites": [
-   { name: 'Wolfram Alpha', url: 'https://www.wolframalpha.com', favicon: 'favicon/devdocs/wolframalpha.ico' },
+   { name: 'Vue.js', url: 'https://cn.vuejs.org', favicon: 'favicon/devdocs/vue.png' },
+   { name: 'React', url: 'https://react.dev', favicon: 'favicon/devdocs/react.png' },
+   { name: 'TypeScript', url: 'https://www.typescriptlang.org', favicon: 'favicon/devdocs/typescript.png' },
+   { name: 'Tailwind CSS', url: 'https://tailwindcss.com', favicon: 'favicon/devdocs/tailwind.png' },
+   { name: 'Next.js', url: 'https://nextjs.org', favicon: 'favicon/devdocs/nextjs.ico' },
+   { name: 'Python', url: 'https://www.python.org', favicon: 'favicon/devdocs/python.ico' },
+   { name: 'Go', url: 'https://go.dev', favicon: 'favicon/devdocs/go.png' },
+   { name: 'Rust', url: 'https://www.rust-lang.org', favicon: 'favicon/devdocs/rust.png' },
+   { name: 'Node.js', url: 'https://nodejs.org', favicon: 'favicon/devdocs/node.png' },
+   { name: 'Docker', url: 'https://www.docker.com', favicon: 'favicon/devdocs/docker.png' },
+   { name: 'Wolfram Alpha', url: 'https://www.wolframalpha.com', favicon: 'favicon/devdocs/wolframalpha.ico' },   
+   { name: 'Angular ', url: 'https://angular.io/', favicon: 'favicon/devdocs/angular.png' },
+   { name: 'Svelte', url: 'https://svelte.dev/', favicon: 'favicon/devdocs/svelte.png' },
+   { name: 'Solid.js ', url: 'https://www.solidjs.com/', favicon: 'favicon/devdocs/solidjs.png' },
+   { name: 'Bootstrap', url: 'https://getbootstrap.com', favicon: 'favicon/devdocs/getbootstrap.ico' },
+   { name: 'Bootstrap中文网', url: 'https://www.bootcss.com/', favicon: 'favicon/devdocs/bootcss.ico' },
+   { name: 'Backbone.js', url: 'https://backbonejs.org', favicon: 'favicon/devdocs/backbonejs.ico' },
+   { name: 'Ember.js', url: 'https://emberjs.com', favicon: 'favicon/devdocs/emberjs.ico' },
+   { name: 'Preact', url: 'https://www.preactjs.com.cn/', favicon: 'favicon/devdocs/preactjs.ico' },
+   { name: 'uni-app', url: 'https://uniapp.dcloud.io/', favicon: 'favicon/devdocs/uniapp.png' },
+   { name: 'Hexo', url: 'https://hexo.io/', favicon: 'favicon/devdocs/hexo.png' },
+   { name: 'npmjs', url: 'https://www.npmjs.com/', favicon: 'favicon/devdocs/npmjs.png' },
    
-   
-    {
-      "name": "Vue.js",
-      "url": "https://cn.vuejs.org",
-      "color": "#42b883"
-    },
-    {
-      "name": "React",
-      "url": "https://react.dev",
-      "color": "#61dafb"
-    },
-    {
-      "name": "TypeScript",
-      "url": "https://www.typescriptlang.org",
-      "color": "#3178c6"
-    },
-    {
-      "name": "Tailwind CSS",
-      "url": "https://tailwindcss.com",
-      "color": "#06b6d4"
-    },
-    {
-      "name": "Next.js",
-      "url": "https://nextjs.org",
-      "color": "#000000"
-    },
-    {
-      "name": "Python",
-      "url": "https://www.python.org",
-      "color": "#3776ab"
-    },
-    {
-      "name": "Go",
-      "url": "https://go.dev",
-      "color": "#00add8"
-    },
-    {
-      "name": "Rust",
-      "url": "https://www.rust-lang.org",
-      "color": "#ce422b"
-    },
-    {
-      "name": "Node.js",
-      "url": "https://nodejs.org",
-      "color": "#339933"
-    },
-    {
-      "name": "Docker",
-      "url": "https://www.docker.com",
-      "color": "#2496ed"
-    }
+
+
   ]
 };
 

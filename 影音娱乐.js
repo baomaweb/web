@@ -8,56 +8,41 @@ var CATEGORY = {
   "name": "影音娱乐",
   "icon": "video",
   "sites": [
-    {
-      "name": "B站",
-      "url": "https://www.bilibili.com",
-      "color": "#fb7299"
-    },
-    {
-      "name": "优酷",
-      "url": "https://www.youku.com",
-      "color": "#1ab7e5"
-    },
-    {
-      "name": "爱奇艺",
-      "url": "https://www.iqiyi.com",
-      "color": "#00be06"
-    },
-    {
-      "name": "腾讯视频",
-      "url": "https://v.qq.com",
-      "color": "#ff6022"
-    },
-    {
-      "name": "YouTube",
-      "url": "https://www.youtube.com",
-      "color": "#ff0000"
-    },
-    {
-      "name": "网易云音乐",
-      "url": "https://music.163.com",
-      "color": "#c20c0c"
-    },
-    {
-      "name": "QQ音乐",
-      "url": "https://y.qq.com",
-      "color": "#31c27c"
-    },
-    {
-      "name": "Spotify",
-      "url": "https://www.spotify.com",
-      "color": "#1db954"
-    },
-    {
-      "name": "抖音",
-      "url": "https://www.douyin.com",
-      "color": "#161823"
-    },
-    {
-      "name": "芒果TV",
-      "url": "https://www.mgtv.com",
-      "color": "#ff5f00"
-    }
+   { name: 'B站', url: 'https://www.bilibili.com', favicon: 'favicon/video/bilibili.ico' },
+   { name: '优酷', url: 'https://www.youku.com', favicon: 'favicon/video/www.youku.com.ico' },
+   { name: '爱奇艺', url: 'https://www.iqiyi.com', favicon: 'favicon/video/www.iqiyi.com.ico' },
+   { name: '腾讯视频', url: 'https://v.qq.com', favicon: 'favicon/video/腾讯视频.png' },
+   { name: '芒果TV', url: 'https://www.mgtv.com', favicon: 'favicon/video/www.mgtv.com.png' },
+   { name: 'QQ音乐', url: 'https://y.qq.com', favicon: 'favicon/video/y.qq.com.ico' },
+   { name: '汽水音乐', url: 'https://www.qishui.com/', favicon: 'favicon/video/www.qishui.com.png' },
+   { name: 'Spotify', url: 'https://www.spotify.com', favicon: 'favicon/video/spotify.ico' },
+   { name: 'apple music', url: 'https://music.apple.com', favicon: 'favicon/video/apple.png' },
+   { name: '抖音', url: 'https://www.douyin.com', favicon: 'favicon/video/www.douyin.com.ico' },
+   { name: '快手', url: 'https://www.kuaishou.com', favicon: 'favicon/video/快手.ico' },
+   { name: '红果短剧', url: 'https://hongguoduanju.com/', favicon: 'favicon/video/红果.png' },
+   { name: '河马剧场', url: 'https://www.kuaikaw.cn//', favicon: 'favicon/video/河马.ico' },
+   { name: 'YouTube', url: 'https://www.youtube.com', 'color': '#ff0000'},
+   { name: '网易云音乐', url: 'https://music.163.com', favicon: 'favicon/video/music.163.com.ico' },
+   { name: '酷狗音乐', url: 'https://www.kugou.com/', favicon: 'favicon/video/www.kugou.com.ico' },
+   { name: '咪咕音乐', url: 'https://music.migu.cn/', favicon: 'favicon/video/www.mgtv.com.png' },
+   { name: '酷我音乐', url: 'https://www.kuwo.cn', favicon: 'favicon/video/www.mgtv.com.png' },
+   { name: '波点音乐', url: 'https://bodian.kuwo.cn', favicon: 'favicon/video/bodian.kuwo.cn.ico' },
+   { name: '番茄音乐', url: 'https://www.novelfm.com/', favicon: 'favicon/video/www.novelfm.com.png' },
+   { name: '千千音乐', url: 'https://music.91q.com', favicon: 'favicon/video/music.91q.com.ico' },
+   { name: '懒人听书', url: 'https://www.lrts.me', favicon: 'favicon/video/www.lrts.me.ico' },
+   { name: '蜻蜓fm', url: 'https://www.qtfm.cn', favicon: 'favicon/video/www.qtfm.cn.png' },
+   { name: '喜马拉雅', url: 'https://www.ximalaya.com', favicon: 'favicon/video/www.ximalaya.com.ico' },
+   { name: '荔枝fm', url: 'https://www.lizhi.fm', favicon: 'favicon/video/www.lizhi.fm.ico' },
+   { name: '5sing', url: 'https://5sing.kugou.com/', favicon: 'favicon/video/5sing.kugou.com.png' },
+   { name: '九天音乐', url: 'http://9sky.com/', favicon: 'favicon/video/9sky.com.png' },
+   { name: '酷6音乐', url: 'https://www.ku6.com', 'color': '#000000' },
+   { name: '5ND音乐', url: 'https://www.5nd.com', favicon: 'favicon/video/www.5nd.com.ico' },
+   { name: '豆瓣音乐', url: 'https://music.douban.com', favicon: 'favicon/video/music.douban.com.ico' },
+   { name: '唱吧', url: 'https://changba.com', favicon: 'favicon/video/changba.com.ico' },
+   { name: '全民k歌', url: 'https://kg.qq.com', favicon: 'favicon/video/kg.qq.com.ico' },
+   
+ 
+
   ]
 };
 

@@ -8,56 +8,40 @@ var CATEGORY = {
   "name": "金融理财",
   "icon": "finance",
   "sites": [
-    {
-      "name": "支付宝",
-      "url": "https://www.alipay.com",
-      "color": "#1677ff"
-    },
-    {
-      "name": "微信支付",
-      "url": "https://pay.weixin.qq.com",
-      "color": "#07c160"
-    },
-    {
-      "name": "京东金融",
-      "url": "https://www.jdpay.com",
-      "color": "#e1251b"
-    },
-    {
-      "name": "东方财富",
-      "url": "https://www.eastmoney.com",
-      "color": "#e03a1d"
-    },
-    {
-      "name": "同花顺",
-      "url": "https://www.10jqka.com.cn",
-      "color": "#ff6b1a"
-    },
-    {
-      "name": "雪球",
-      "url": "https://xueqiu.com",
-      "color": "#1a73e8"
-    },
-    {
-      "name": "蚂蚁财富",
-      "url": "https://www.antfortune.com",
-      "color": "#1677ff"
-    },
-    {
-      "name": "新浪财经",
-      "url": "https://finance.sina.com.cn",
-      "color": "#ff0000"
-    },
-    {
-      "name": "招商银行",
-      "url": "https://www.cmbchina.com",
-      "color": "#c7000b"
-    },
-    {
-      "name": "工商银行",
-      "url": "https://www.icbc.com.cn",
-      "color": "#c7000b"
-    }
+   { name: '支付宝', url: 'https://www.alipay.com', favicon: 'favicon/finance/支付宝.ico' },
+   { name: '微信支付', url: 'https://pay.weixin.qq.com', favicon: 'favicon/finance/微信支付.ico' },
+   { name: '京东金融', url: 'https://www.jdpay.com', favicon: 'favicon/finance/京东支付.ico' },
+   { name: '东方财富', url: 'https://www.eastmoney.com', favicon: 'favicon/finance/东方财富.ico' },
+   { name: '同花顺', url: 'https://www.10jqka.com.cn', favicon: 'favicon/finance/同花顺.ico' },
+   { name: '雪球', url: 'https://xueqiu.com', favicon: 'favicon/finance/雪球.ico' },
+   { name: '金融界', url: 'http://www.jrj.com.cn', favicon: 'favicon/finance/金融界.ico' },
+   { name: '财经网', url: 'http://www.caijing.com.cn', favicon: 'favicon/finance/财经网.ico' },
+   { name: '中金在线', url: 'https://cnfol.com/', favicon: 'favicon/finance/中金在线.ico' },
+   { name: '第一财经', url: 'https://www.yicai.com', favicon: 'favicon/finance/第一财经.ico' },
+   { name: '中经新纬', url: 'https://www.jwview.com', favicon: 'favicon/finance/中新经纬.png' },
+   { name: '和讯', url: 'https://www.hexun.com', favicon: 'favicon/finance/和讯网.ico' },
+   { name: '每日经济新闻', url: 'https://www.nbd.com.cn', favicon: 'favicon/finance/每日经济新闻.ico' },
+   { name: '华尔街见闻', url: 'https://wallstreetcn.com', favicon: 'favicon/finance/华尔街见闻.png' },
+   { name: '经济观察网', url: 'https://www.eeo.com.cn', favicon: 'favicon/finance/经济观察网.ico' },
+   { name: '财联社', url: 'https://www.cls.cn/', favicon: 'favicon/finance/财联社.ico' },
+   { name: '凤凰网财经', url: 'https://finance.ifeng.com', favicon: 'favicon/finance/凤凰财经.png' },
+   { name: '腾讯财经', url: 'https://news.qq.com/ch/finance', favicon: 'favicon/finance/腾讯财经.png' },
+   { name: '网易财经', url: 'https://money.163.com', favicon: 'favicon/finance/网易财经.ico' },
+   { name: '新浪财经', url: 'https://finance.sina.com.cn', favicon: 'favicon/finance/新浪财经.png' },
+   { name: '21经济网', url: 'https://www.21jingji.com', favicon: 'favicon/finance/21世纪经济报道.ico' },
+   { name: '南方财经网', url: 'https://www.sfccn.com/', favicon: 'favicon/finance/南方财经网.ico' },
+   { name: '东方财富网', url: 'https://www.eastmoney.com', favicon: 'favicon/finance/东方财富.ico' },
+   { name: '上海证券报', url: 'https://www.cnstock.com/', favicon: 'favicon/finance/上海证券报.png' },
+   { name: '证券时报', url: 'http://www.stcn.com', favicon: 'favicon/finance/证券时报.ico' },
+   { name: '证券之星', url: 'https://www.stockstar.com', favicon: 'favicon/finance/证券之星.ico' },
+   { name: '天天基金网', url: 'https://fund.eastmoney.com', favicon: 'favicon/finance/天天基金.ico' },
+   { name: '晨星网', url: 'https://www.morningstar.cn', favicon: 'favicon/finance/晨星.ico' },
+   { name: '中国基金报', url: 'https://www.chnfund.com/', favicon: 'favicon/finance/中国基金报.ico' },
+   { name: '蚂蚁财富', url: 'https://www.antfortune.com', favicon: 'favicon/finance/蚂蚁财富.ico' },
+   { name: '创业邦', url: 'https://www.cyzone.cn', favicon: 'favicon/finance/创业邦.ico' },
+   { name: '美通社', url: 'https://www.prnasia.com', favicon: 'favicon/finance/美通社.png' },
+   
+   
   ]
 };
 
