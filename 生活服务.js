@@ -1,6 +1,6 @@
 /**
  * 生活服务 分类页 - 数据 + 应用逻辑
- * 10 个网站
+ * 40 个网站
  */
 
 var CATEGORY = {
@@ -57,6 +57,56 @@ var CATEGORY = {
       "name": "天气通",
       "url": "https://www.tianqi.com",
       "color": "#1ab7e5"
+    },
+    {
+      "name": "美团外卖",
+      "url": "https://waimai.meituan.com",
+      "color": "#ffc300"
+    },
+    {
+      "name": "盒马",
+      "url": "https://www.freshhippo.com",
+      "color": "#00a0e9"
+    },
+    {
+      "name": "叮咚买菜",
+      "url": "https://www.100.me",
+      "color": "#00b38a"
+    },
+    {
+      "name": "天鹅到家",
+      "url": "https://www.daojia.com",
+      "color": "#ff6a00"
+    },
+    {
+      "name": "朴朴超市",
+      "url": "https://www.pupumall.com",
+      "color": "#00b38a"
+    },
+    {
+      "name": "闲鱼租房",
+      "url": "https://www.goofish.com",
+      "color": "#ffcc00"
+    },
+    {
+      "name": "口碑",
+      "url": "https://www.koubei.com",
+      "color": "#ff6a00"
+    },
+    {
+      "name": "自如",
+      "url": "https://www.ziroom.com",
+      "color": "#00a0a0"
+    },
+    {
+      "name": "京东到家",
+      "url": "https://www.jddj.com",
+      "color": "#e1251b"
+    },
+    {
+      "name": "闪送",
+      "url": "https://www.ishansong.com",
+      "color": "#ff6a00"
     }
   ]
 };
@@ -100,7 +150,15 @@ function initTheme() {
   }
 }
 
-
+// ==================== AdSense: 分类页广告代码（独立代码块，仅分类页使用） ====================
+// 每个分类页共有 3 个广告位：网格广告 1（左上 2x2）、网格广告 2（右中 2x2）、页尾横幅。
+// 部署时请替换为 AdSense 后台的真实值：
+//   client : 你的发布商 ID，形如 ca-pub-1234567890123456
+//   pos1   : 网格广告 1 的广告单元 ID（在 AdSense 后台创建）
+//   pos2   : 网格广告 2 的广告单元 ID
+//   bottom : 分类页页尾广告的广告单元 ID
+// 注意：每个广告位必须使用独立的广告单元 ID。同一页面重复使用同一个广告单元 ID 时，
+//       AdSense 只会渲染第一个，其余广告位不显示，导致网格广告只显示部分。
 var CATEGORY_AD_UNITS = {
   client: 'ca-pub-6172791470588821',
   pos1: '4869723184',
