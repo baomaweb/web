@@ -1,6 +1,6 @@
 /**
  * 常用工具 分类页 - 数据 + 应用逻辑
- * 10 个网站
+ * 40 个网站
  */
 
 var CATEGORY = {
@@ -8,25 +8,66 @@ var CATEGORY = {
   "name": "常用工具",
   "icon": "tools",
   "sites": [
-   { name: '剪映', url: 'https://www.capcut.cn', favicon: 'favicon/tools/剪映.png' },
-   { name: '百度翻译', url: 'https://www.capcut.cn', favicon: 'favicon/tools/百度翻译.ico' },
-   { name: '有道翻译', url: 'https://fanyi.youdao.com', favicon: 'favicon/tools/有道翻译.png' },
-   { name: 'DeepL', url: 'https://www.deepl.com', favicon: 'favicon/tools/deepl.png' },
-   { name: 'Google翻译', url: 'https://translate.google.com', favicon: 'favicon/tools/Google翻译.ico' },
-   { name: '阿里翻译', url: 'https://translate.alibaba.com', favicon: 'favicon/tools/阿里翻译.ico' },
-   { name: '必应翻译', url: 'https://www.bing.com/translator', favicon: 'favicon/tools/bing翻译.png' },
-   
-   
-   
-   { name: '草料二维码', url: 'https://cli.im', favicon: 'favicon/tools/草料.ico' },
-   { name: 'TinyPNG', url: 'https://tinypng.com', favicon: 'favicon/tools/tinypng.png' },
-   { name: 'removebg', url: 'https://www.remove.bg', favicon: 'favicon/tools/remove.ico' },
-   { name: 'Photopea', url: 'https://www.photopea.com', favicon: 'favicon/tools/photopea.png' },
-
-
-
-
-
+    {
+      "name": "剪映",
+      "url": "https://www.capcut.cn",
+      "color": "#4e6ef2",
+      "favicon": "favicon/tools/剪映.png"
+    },
+    {
+      "name": "有道翻译",
+      "url": "https://fanyi.youdao.com",
+      "color": "#00a0a0",
+      "favicon": "favicon/tools/有道翻译.png"
+    },
+    {
+      "name": "DeepL",
+      "url": "https://www.deepl.com",
+      "color": "#ff6a00",
+      "favicon": "favicon/tools/deepl.png"
+    },
+    {
+      "name": "Google翻译",
+      "url": "https://translate.google.com",
+      "color": "#e60012",
+      "favicon": "favicon/tools/Google翻译.ico"
+    },
+    {
+      "name": "阿里翻译",
+      "url": "https://translate.alibaba.com",
+      "color": "#1a73e8",
+      "favicon": "favicon/tools/阿里翻译.ico"
+    },
+    {
+      "name": "必应翻译",
+      "url": "https://www.bing.com/translator",
+      "color": "#00b38a",
+      "favicon": "favicon/tools/bing翻译.png"
+    },
+    {
+      "name": "草料二维码",
+      "url": "https://cli.im",
+      "color": "#c7000b",
+      "favicon": "favicon/tools/草料.ico"
+    },
+    {
+      "name": "TinyPNG",
+      "url": "https://tinypng.com",
+      "color": "#2c8fbb",
+      "favicon": "favicon/tools/tinypng.png"
+    },
+    {
+      "name": "removebg",
+      "url": "https://www.remove.bg",
+      "color": "#ff5000",
+      "favicon": "favicon/tools/remove.ico"
+    },
+    {
+      "name": "Photopea",
+      "url": "https://www.photopea.com",
+      "color": "#8b1a1a",
+      "favicon": "favicon/tools/photopea.png"
+    },
     {
       "name": "腾讯文档",
       "url": "https://docs.qq.com",
@@ -36,6 +77,51 @@ var CATEGORY = {
       "name": "幕布",
       "url": "https://mubu.com",
       "color": "#ff6b6b"
+    },
+    {
+      "name": "百度翻译",
+      "url": "https://fanyi.baidu.com",
+      "color": "#2932e1"
+    },
+    {
+      "name": "菜鸟教程",
+      "url": "https://www.runoob.com",
+      "color": "#3cb371"
+    },
+    {
+      "name": "Wolfram Alpha",
+      "url": "https://www.wolframalpha.com",
+      "color": "#dd1100"
+    },
+    {
+      "name": "阿里云盘",
+      "url": "https://www.alipan.com",
+      "color": "#00a0e9"
+    },
+    {
+      "name": "百度网盘",
+      "url": "https://pan.baidu.com",
+      "color": "#2932e1"
+    },
+    {
+      "name": "夸克网盘",
+      "url": "https://pan.quark.cn",
+      "color": "#1a73e8"
+    },
+    {
+      "name": "迅雷",
+      "url": "https://www.xunlei.com",
+      "color": "#1a73e8"
+    },
+    {
+      "name": "在线工具",
+      "url": "https://tool.lu",
+      "color": "#00a0a0"
+    },
+    {
+      "name": "创客贴",
+      "url": "https://www.chuangkit.com",
+      "color": "#2d7cff"
     }
   ]
 };
@@ -79,7 +165,15 @@ function initTheme() {
   }
 }
 
-
+// ==================== AdSense: 分类页广告代码（独立代码块，仅分类页使用） ====================
+// 每个分类页共有 3 个广告位：网格广告 1（左上 2x2）、网格广告 2（右中 2x2）、页尾横幅。
+// 部署时请替换为 AdSense 后台的真实值：
+//   client : 你的发布商 ID，形如 ca-pub-1234567890123456
+//   pos1   : 网格广告 1 的广告单元 ID（在 AdSense 后台创建）
+//   pos2   : 网格广告 2 的广告单元 ID
+//   bottom : 分类页页尾广告的广告单元 ID
+// 注意：每个广告位必须使用独立的广告单元 ID。同一页面重复使用同一个广告单元 ID 时，
+//       AdSense 只会渲染第一个，其余广告位不显示，导致网格广告只显示部分。
 var CATEGORY_AD_UNITS = {
   client: 'ca-pub-6172791470588821',
   pos1: '4869723184',

@@ -1,6 +1,6 @@
 /**
  * 播客音频 分类页 - 数据 + 应用逻辑
- * 10 个网站
+ * 40 个网站
  */
 
 var CATEGORY = {
@@ -57,6 +57,56 @@ var CATEGORY = {
       "name": "播客小镇",
       "url": "https://www.podtown.cn",
       "color": "#ff4081"
+    },
+    {
+      "name": "猫耳FM",
+      "url": "https://www.maoer.com",
+      "color": "#ff6b9d"
+    },
+    {
+      "name": "Anchor",
+      "url": "https://anchor.fm",
+      "color": "#8b5cf6"
+    },
+    {
+      "name": "Castro",
+      "url": "https://castro.fm",
+      "color": "#ff6a00"
+    },
+    {
+      "name": "Overcast",
+      "url": "https://overcast.fm",
+      "color": "#fc7e0f"
+    },
+    {
+      "name": "阿基米德",
+      "url": "https://www.ajmide.com",
+      "color": "#1a73e8"
+    },
+    {
+      "name": "懒人听书",
+      "url": "https://www.lrts.me",
+      "color": "#ff6a00"
+    },
+    {
+      "name": "企鹅FM",
+      "url": "https://fm.qq.com",
+      "color": "#1a73e8"
+    },
+    {
+      "name": "QQ音乐",
+      "url": "https://y.qq.com",
+      "color": "#31c27c"
+    },
+    {
+      "name": "酷我音乐",
+      "url": "https://www.kuwo.cn",
+      "color": "#ff6a00"
+    },
+    {
+      "name": "Acast",
+      "url": "https://www.acast.com",
+      "color": "#f5c518"
     }
   ]
 };
@@ -100,7 +150,15 @@ function initTheme() {
   }
 }
 
-
+// ==================== AdSense: 分类页广告代码（独立代码块，仅分类页使用） ====================
+// 每个分类页共有 3 个广告位：网格广告 1（左上 2x2）、网格广告 2（右中 2x2）、页尾横幅。
+// 部署时请替换为 AdSense 后台的真实值：
+//   client : 你的发布商 ID，形如 ca-pub-1234567890123456
+//   pos1   : 网格广告 1 的广告单元 ID（在 AdSense 后台创建）
+//   pos2   : 网格广告 2 的广告单元 ID
+//   bottom : 分类页页尾广告的广告单元 ID
+// 注意：每个广告位必须使用独立的广告单元 ID。同一页面重复使用同一个广告单元 ID 时，
+//       AdSense 只会渲染第一个，其余广告位不显示，导致网格广告只显示部分。
 var CATEGORY_AD_UNITS = {
   client: 'ca-pub-6172791470588821',
   pos1: '4869723184',

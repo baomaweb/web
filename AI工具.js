@@ -1,6 +1,6 @@
 /**
  * AI工具 分类页 - 数据 + 应用逻辑
- * 31 个网站
+ * 40 个网站
  */
 
 var CATEGORY = {
@@ -8,46 +8,245 @@ var CATEGORY = {
   "name": "AI工具",
   "icon": "ai",
   "sites": [
-   { name: 'kimi', url: 'https://www.kimi.com/', favicon: 'favicon/ai/kimi.png' },
-   { name: 'deepseek', url: 'https://www.deepseek.com', favicon: 'favicon/ai/deepseek.png' },
-   { name: '豆包', url: 'https://www.doubao.com', favicon: 'favicon/ai/豆包.png' },
-   { name: '字节TRAE', url: 'https://www.trae.cn', favicon: 'favicon/ai/trae.png' },	
-   { name: '扣子', url: 'https://www.coze.cn/overview', favicon: 'favicon/ai/扣子.png' },
-   { name: '即梦 ', url: 'https://jimeng.jianying.com', favicon: 'favicon/ai/即梦.png' },
-   { name: '百度搭子', url: 'https://www.dumate.cn/', favicon: 'favicon/ai/搭子.png' },
-   { name: '百度秒哒', url: 'https://www.miaoda.cn/', favicon: 'favicon/ai/秒哒.png' },
-   { name: '库库AI', url: 'https://kuku.baidu.com/', favicon: 'favicon/ai/库库.png' },
-   { name: '文心', url: 'https://wenxin.baidu.com/', favicon: 'favicon/ai/文心.ico' },
-   { name: '文心一言', url: 'https://yiyan.baidu.com', favicon: 'favicon/ai/文心一言.ico'},
-   { name: '文心快码', url: 'https://comate.baidu.com/zh', favicon: 'favicon/ai/文心快码.png' },
-   { name: 'accio', url: 'https://www.accio.com', favicon: 'favicon/ai/accio.png' },
-   { name: '通义千问',url: 'https://qianwen.aliyun.com',favicon: 'favicon/ai/通义千问.png'},
-   { name: '万相', url: 'https://tongyi.aliyun.com/wan/', favicon: 'favicon/ai/万相.png' },
-   { name: 'Qoder', url: 'https://qoder.com.cn', favicon: 'favicon/ai/qoder.png' },
-   { name: '阿里秒悟', url: 'https://meoo.com/', favicon: 'favicon/ai/meoo.png' },
-   { name: '腾讯元器', url: 'https://yuanqi.tencent.com/', favicon: 'favicon/ai/腾讯元器.png' },
-   { name: 'codebuddy', url: 'https://www.codebuddy.cn/', favicon: 'favicon/ai/codebuddy.png' },
-   { name: 'workbuddy', url: 'https://www.workbuddy.cn', favicon: 'favicon/ai/workbuddy.png' },
-   { name: 'qclaw', url: 'https://qclaw.qq.com/', favicon: 'favicon/ai/qclaw.png' },
-   { name: '腾讯元宝', url: 'https://yuanbao.tencent.com/', favicon: 'favicon/ai/元宝.png' },
-   { name: '可灵', url: 'https://klingai.com', favicon: 'favicon/ai/可灵.png' },
-   { name: '讯飞星火', url: 'https://xinghuo.xfyun.cn/', favicon: 'favicon/ai/讯飞星火.png' },
-   { name: '智谱Zcode', url: 'https://zcode.z.ai/cn', favicon: 'favicon/ai/智谱Zcode.png' },
-   { name: 'AutoClaw', url: 'https://autoclaw.zhipuai.cn/', favicon: 'favicon/ai/autoclaw.png' },
-   { name: '清言', url: 'https://chatglm.cn', favicon: 'favicon/ai/清言.png' },
-   { name: 'ChatGPT', url: 'https://chat.openai.com', favicon: 'favicon/ai/openai.ico' },
-   { name: 'huggingface', url: 'https://huggingface.co', favicon: 'favicon/ai/huggingface.ico' },
-   { name: 'claude', url: 'https://claude.ai', favicon: 'favicon/ai/claude.ico' },
-   { name: 'Gemini', url: 'https://gemini.google.com', favicon: 'favicon/ai/gemini.png' },
-   { name: 'Midjourney', url: 'https://www.midjourney.com', favicon: 'favicon/ai/midjourney.png' },
-   { name: 'Stable Diffusion', url: 'https://stability.ai', favicon: 'favicon/ai/stability.png' },
-   { name: 'Perplexity', url: 'https://www.perplexity.ai', favicon: 'favicon/ai/perplexity.ico' },
-   { name: '百川智能', url: 'https://www.baichuan-ai.com/', favicon: 'favicon/ai/百川.png' },
-   { name: '天工AI', url: 'https://www.tiangong.cn/', favicon: 'favicon/ai/天工.ico' },
-   { name: '纳米work', url: 'https://work.n.cn/', favicon: 'favicon/ai/纳米.png' },
-   { name: '有道龙虾', url: 'https://lobsterai.youdao.com/', favicon: 'favicon/ai/有道龙虾.png' },
-   { name: '码上飞', url: 'https://www.codeflying.net/', favicon: 'favicon/ai/码上飞.ico' },
-
+    {
+      "name": "kimi",
+      "url": "https://www.kimi.com/",
+      "color": "#4e6ef2",
+      "favicon": "favicon/ai/kimi.png"
+    },
+    {
+      "name": "deepseek",
+      "url": "https://www.deepseek.com",
+      "color": "#00a0a0",
+      "favicon": "favicon/ai/deepseek.png"
+    },
+    {
+      "name": "豆包",
+      "url": "https://www.doubao.com",
+      "color": "#ff6a00",
+      "favicon": "favicon/ai/豆包.png"
+    },
+    {
+      "name": "字节TRAE",
+      "url": "https://www.trae.cn",
+      "color": "#e60012",
+      "favicon": "favicon/ai/trae.png"
+    },
+    {
+      "name": "扣子",
+      "url": "https://www.coze.cn/overview",
+      "color": "#1a73e8",
+      "favicon": "favicon/ai/扣子.png"
+    },
+    {
+      "name": "即梦 ",
+      "url": "https://jimeng.jianying.com",
+      "color": "#00b38a",
+      "favicon": "favicon/ai/即梦.png"
+    },
+    {
+      "name": "百度搭子",
+      "url": "https://www.dumate.cn/",
+      "color": "#c7000b",
+      "favicon": "favicon/ai/搭子.png"
+    },
+    {
+      "name": "百度秒哒",
+      "url": "https://www.miaoda.cn/",
+      "color": "#2c8fbb",
+      "favicon": "favicon/ai/秒哒.png"
+    },
+    {
+      "name": "库库AI",
+      "url": "https://kuku.baidu.com/",
+      "color": "#ff5000",
+      "favicon": "favicon/ai/库库.png"
+    },
+    {
+      "name": "文心",
+      "url": "https://wenxin.baidu.com/",
+      "color": "#8b1a1a",
+      "favicon": "favicon/ai/文心.ico"
+    },
+    {
+      "name": "文心一言",
+      "url": "https://yiyan.baidu.com",
+      "color": "#4e6ef2",
+      "favicon": "favicon/ai/文心一言.ico"
+    },
+    {
+      "name": "文心快码",
+      "url": "https://comate.baidu.com/zh",
+      "color": "#00a0a0",
+      "favicon": "favicon/ai/文心快码.png"
+    },
+    {
+      "name": "accio",
+      "url": "https://www.accio.com",
+      "color": "#ff6a00",
+      "favicon": "favicon/ai/accio.png"
+    },
+    {
+      "name": "通义千问",
+      "url": "https://qianwen.aliyun.com",
+      "color": "#e60012",
+      "favicon": "favicon/ai/通义千问.png"
+    },
+    {
+      "name": "万相",
+      "url": "https://tongyi.aliyun.com/wan/",
+      "color": "#1a73e8",
+      "favicon": "favicon/ai/万相.png"
+    },
+    {
+      "name": "Qoder",
+      "url": "https://qoder.com.cn",
+      "color": "#00b38a",
+      "favicon": "favicon/ai/qoder.png"
+    },
+    {
+      "name": "阿里秒悟",
+      "url": "https://meoo.com/",
+      "color": "#c7000b",
+      "favicon": "favicon/ai/meoo.png"
+    },
+    {
+      "name": "腾讯元器",
+      "url": "https://yuanqi.tencent.com/",
+      "color": "#2c8fbb",
+      "favicon": "favicon/ai/腾讯元器.png"
+    },
+    {
+      "name": "codebuddy",
+      "url": "https://www.codebuddy.cn/",
+      "color": "#ff5000",
+      "favicon": "favicon/ai/codebuddy.png"
+    },
+    {
+      "name": "workbuddy",
+      "url": "https://www.workbuddy.cn",
+      "color": "#8b1a1a",
+      "favicon": "favicon/ai/workbuddy.png"
+    },
+    {
+      "name": "qclaw",
+      "url": "https://qclaw.qq.com/",
+      "color": "#4e6ef2",
+      "favicon": "favicon/ai/qclaw.png"
+    },
+    {
+      "name": "腾讯元宝",
+      "url": "https://yuanbao.tencent.com/",
+      "color": "#00a0a0",
+      "favicon": "favicon/ai/元宝.png"
+    },
+    {
+      "name": "可灵",
+      "url": "https://klingai.com",
+      "color": "#ff6a00",
+      "favicon": "favicon/ai/可灵.png"
+    },
+    {
+      "name": "讯飞星火",
+      "url": "https://xinghuo.xfyun.cn/",
+      "color": "#e60012",
+      "favicon": "favicon/ai/讯飞星火.png"
+    },
+    {
+      "name": "智谱Zcode",
+      "url": "https://zcode.z.ai/cn",
+      "color": "#1a73e8",
+      "favicon": "favicon/ai/智谱Zcode.png"
+    },
+    {
+      "name": "AutoClaw",
+      "url": "https://autoclaw.zhipuai.cn/",
+      "color": "#00b38a",
+      "favicon": "favicon/ai/autoclaw.png"
+    },
+    {
+      "name": "清言",
+      "url": "https://chatglm.cn",
+      "color": "#c7000b",
+      "favicon": "favicon/ai/清言.png"
+    },
+    {
+      "name": "ChatGPT",
+      "url": "https://chat.openai.com",
+      "color": "#2c8fbb",
+      "favicon": "favicon/ai/openai.ico"
+    },
+    {
+      "name": "huggingface",
+      "url": "https://huggingface.co",
+      "color": "#ff5000",
+      "favicon": "favicon/ai/huggingface.ico"
+    },
+    {
+      "name": "claude",
+      "url": "https://claude.ai",
+      "color": "#8b1a1a",
+      "favicon": "favicon/ai/claude.ico"
+    },
+    {
+      "name": "Gemini",
+      "url": "https://gemini.google.com",
+      "color": "#4e6ef2",
+      "favicon": "favicon/ai/gemini.png"
+    },
+    {
+      "name": "Midjourney",
+      "url": "https://www.midjourney.com",
+      "color": "#00a0a0",
+      "favicon": "favicon/ai/midjourney.png"
+    },
+    {
+      "name": "Stable Diffusion",
+      "url": "https://stability.ai",
+      "color": "#ff6a00",
+      "favicon": "favicon/ai/stability.png"
+    },
+    {
+      "name": "Perplexity",
+      "url": "https://www.perplexity.ai",
+      "color": "#e60012",
+      "favicon": "favicon/ai/perplexity.ico"
+    },
+    {
+      "name": "百川智能",
+      "url": "https://www.baichuan-ai.com/",
+      "color": "#1a73e8",
+      "favicon": "favicon/ai/百川.png"
+    },
+    {
+      "name": "天工AI",
+      "url": "https://www.tiangong.cn/",
+      "color": "#00b38a",
+      "favicon": "favicon/ai/天工.ico"
+    },
+    {
+      "name": "纳米work",
+      "url": "https://work.n.cn/",
+      "color": "#c7000b",
+      "favicon": "favicon/ai/纳米.png"
+    },
+    {
+      "name": "有道龙虾",
+      "url": "https://lobsterai.youdao.com/",
+      "color": "#2c8fbb",
+      "favicon": "favicon/ai/有道龙虾.png"
+    },
+    {
+      "name": "码上飞",
+      "url": "https://www.codeflying.net/",
+      "color": "#ff5000",
+      "favicon": "favicon/ai/码上飞.ico"
+    },
+    {
+      "name": "Kimi",
+      "url": "https://kimi.moonshot.cn",
+      "color": "#1a1a2e"
+    }
   ]
 };
 
@@ -90,6 +289,15 @@ function initTheme() {
   }
 }
 
+// ==================== AdSense: 分类页广告代码（独立代码块，仅分类页使用） ====================
+// 每个分类页共有 3 个广告位：网格广告 1（左上 2x2）、网格广告 2（右中 2x2）、页尾横幅。
+// 部署时请替换为 AdSense 后台的真实值：
+//   client : 你的发布商 ID，形如 ca-pub-1234567890123456
+//   pos1   : 网格广告 1 的广告单元 ID（在 AdSense 后台创建）
+//   pos2   : 网格广告 2 的广告单元 ID
+//   bottom : 分类页页尾广告的广告单元 ID
+// 注意：每个广告位必须使用独立的广告单元 ID。同一页面重复使用同一个广告单元 ID 时，
+//       AdSense 只会渲染第一个，其余广告位不显示，导致网格广告只显示部分。
 var CATEGORY_AD_UNITS = {
   client: 'ca-pub-6172791470588821',
   pos1: '4869723184',
