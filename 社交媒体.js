@@ -1,6 +1,6 @@
 /**
  * 社交媒体 分类页 - 数据 + 应用逻辑
- * 10 个网站
+ * 40 个网站
  */
 
 var CATEGORY = {
@@ -57,6 +57,56 @@ var CATEGORY = {
       "name": "LinkedIn",
       "url": "https://www.linkedin.com",
       "color": "#0a66c2"
+    },
+    {
+      "name": "快手",
+      "url": "https://www.kuaishou.com",
+      "color": "#ff4d00"
+    },
+    {
+      "name": "百度贴吧",
+      "url": "https://tieba.baidu.com",
+      "color": "#3385ff"
+    },
+    {
+      "name": "TikTok",
+      "url": "https://www.tiktok.com",
+      "color": "#000000"
+    },
+    {
+      "name": "Snapchat",
+      "url": "https://www.snapchat.com",
+      "color": "#fffc00"
+    },
+    {
+      "name": "Pinterest",
+      "url": "https://www.pinterest.com",
+      "color": "#e60023"
+    },
+    {
+      "name": "Telegram",
+      "url": "https://telegram.org",
+      "color": "#229ed9"
+    },
+    {
+      "name": "Discord",
+      "url": "https://discord.com",
+      "color": "#5865f2"
+    },
+    {
+      "name": "脉脉",
+      "url": "https://maimai.cn",
+      "color": "#00b38a"
+    },
+    {
+      "name": "即刻",
+      "url": "https://okjike.com",
+      "color": "#ffcc00"
+    },
+    {
+      "name": "虎扑",
+      "url": "https://www.hupu.com",
+      "color": "#c7000b"
     }
   ]
 };
@@ -100,7 +150,15 @@ function initTheme() {
   }
 }
 
-
+// ==================== AdSense: 分类页广告代码（独立代码块，仅分类页使用） ====================
+// 每个分类页共有 3 个广告位：网格广告 1（左上 2x2）、网格广告 2（右中 2x2）、页尾横幅。
+// 部署时请替换为 AdSense 后台的真实值：
+//   client : 你的发布商 ID，形如 ca-pub-1234567890123456
+//   pos1   : 网格广告 1 的广告单元 ID（在 AdSense 后台创建）
+//   pos2   : 网格广告 2 的广告单元 ID
+//   bottom : 分类页页尾广告的广告单元 ID
+// 注意：每个广告位必须使用独立的广告单元 ID。同一页面重复使用同一个广告单元 ID 时，
+//       AdSense 只会渲染第一个，其余广告位不显示，导致网格广告只显示部分。
 var CATEGORY_AD_UNITS = {
   client: 'ca-pub-6172791470588821',
   pos1: '4869723184',

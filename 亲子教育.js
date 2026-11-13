@@ -1,6 +1,6 @@
 /**
  * 亲子教育 分类页 - 数据 + 应用逻辑
- * 10 个网站
+ * 40 个网站
  */
 
 var CATEGORY = {
@@ -57,6 +57,56 @@ var CATEGORY = {
       "name": "巧虎",
       "url": "https://www.qiaohu.com",
       "color": "#ff6600"
+    },
+    {
+      "name": "宝宝树",
+      "url": "https://www.babytree.com",
+      "color": "#ff6a00"
+    },
+    {
+      "name": "妈妈网",
+      "url": "https://www.mama.cn",
+      "color": "#ff4d6d"
+    },
+    {
+      "name": "育儿网",
+      "url": "https://www.ci123.com",
+      "color": "#ff6a00"
+    },
+    {
+      "name": "亲宝宝",
+      "url": "https://www.qinbaobao.com",
+      "color": "#00b38a"
+    },
+    {
+      "name": "凯叔讲故事",
+      "url": "https://www.kaishujianggushi.com",
+      "color": "#ff6a00"
+    },
+    {
+      "name": "叽里呱啦",
+      "url": "https://www.jiliguala.com",
+      "color": "#ffcc00"
+    },
+    {
+      "name": "贝瓦儿歌",
+      "url": "https://www.beva.com",
+      "color": "#ff6a00"
+    },
+    {
+      "name": "贝乐虎",
+      "url": "https://www.beilehu.com",
+      "color": "#ffcc00"
+    },
+    {
+      "name": "小小优酷",
+      "url": "https://baby.youku.com",
+      "color": "#1a73e8"
+    },
+    {
+      "name": "宝宝知道",
+      "url": "https://baobao.baidu.com",
+      "color": "#2932e1"
     }
   ]
 };
@@ -100,7 +150,15 @@ function initTheme() {
   }
 }
 
-
+// ==================== AdSense: 分类页广告代码（独立代码块，仅分类页使用） ====================
+// 每个分类页共有 3 个广告位：网格广告 1（左上 2x2）、网格广告 2（右中 2x2）、页尾横幅。
+// 部署时请替换为 AdSense 后台的真实值：
+//   client : 你的发布商 ID，形如 ca-pub-1234567890123456
+//   pos1   : 网格广告 1 的广告单元 ID（在 AdSense 后台创建）
+//   pos2   : 网格广告 2 的广告单元 ID
+//   bottom : 分类页页尾广告的广告单元 ID
+// 注意：每个广告位必须使用独立的广告单元 ID。同一页面重复使用同一个广告单元 ID 时，
+//       AdSense 只会渲染第一个，其余广告位不显示，导致网格广告只显示部分。
 var CATEGORY_AD_UNITS = {
   client: 'ca-pub-6172791470588821',
   pos1: '4869723184',

@@ -1,6 +1,6 @@
 /**
  * 旅游出行 分类页 - 数据 + 应用逻辑
- * 10 个网站
+ * 40 个网站
  */
 
 var CATEGORY = {
@@ -57,6 +57,56 @@ var CATEGORY = {
       "name": "途牛",
       "url": "https://www.tuniu.com",
       "color": "#ff5510"
+    },
+    {
+      "name": "穷游网",
+      "url": "https://www.qyer.com",
+      "color": "#00a0a0"
+    },
+    {
+      "name": "Tripadvisor",
+      "url": "https://www.tripadvisor.cn",
+      "color": "#00af87"
+    },
+    {
+      "name": "百度地图",
+      "url": "https://map.baidu.com",
+      "color": "#2932e1"
+    },
+    {
+      "name": "高德地图",
+      "url": "https://www.amap.com",
+      "color": "#1a73e8"
+    },
+    {
+      "name": "Google Maps",
+      "url": "https://maps.google.com",
+      "color": "#4285f4"
+    },
+    {
+      "name": "租租车",
+      "url": "https://www.zuzuche.com",
+      "color": "#ff6a00"
+    },
+    {
+      "name": "皇包车",
+      "url": "https://www.huangbaoche.com",
+      "color": "#1a73e8"
+    },
+    {
+      "name": "驴妈妈",
+      "url": "https://www.lvmama.com",
+      "color": "#ff6a00"
+    },
+    {
+      "name": "遨游网",
+      "url": "https://www.aoyou.com",
+      "color": "#0066cc"
+    },
+    {
+      "name": "中青旅",
+      "url": "https://www.cytsonline.com",
+      "color": "#c7000b"
     }
   ]
 };
@@ -100,7 +150,15 @@ function initTheme() {
   }
 }
 
-
+// ==================== AdSense: 分类页广告代码（独立代码块，仅分类页使用） ====================
+// 每个分类页共有 3 个广告位：网格广告 1（左上 2x2）、网格广告 2（右中 2x2）、页尾横幅。
+// 部署时请替换为 AdSense 后台的真实值：
+//   client : 你的发布商 ID，形如 ca-pub-1234567890123456
+//   pos1   : 网格广告 1 的广告单元 ID（在 AdSense 后台创建）
+//   pos2   : 网格广告 2 的广告单元 ID
+//   bottom : 分类页页尾广告的广告单元 ID
+// 注意：每个广告位必须使用独立的广告单元 ID。同一页面重复使用同一个广告单元 ID 时，
+//       AdSense 只会渲染第一个，其余广告位不显示，导致网格广告只显示部分。
 var CATEGORY_AD_UNITS = {
   client: 'ca-pub-6172791470588821',
   pos1: '4869723184',
