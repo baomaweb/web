@@ -1,6 +1,6 @@
 /**
  * 招聘求职 分类页 - 数据 + 应用逻辑
- * 10 个网站
+ * 40 个网站
  */
 
 var CATEGORY = {
@@ -57,6 +57,56 @@ var CATEGORY = {
       "name": "牛客网",
       "url": "https://www.nowcoder.com",
       "color": "#00a0a0"
+    },
+    {
+      "name": "实习僧",
+      "url": "https://www.shixiseng.com",
+      "color": "#1a73e8"
+    },
+    {
+      "name": "应届生求职网",
+      "url": "https://www.yingjiesheng.com",
+      "color": "#0066cc"
+    },
+    {
+      "name": "看准网",
+      "url": "https://www.kanzhun.com",
+      "color": "#00b38a"
+    },
+    {
+      "name": "58同城招聘",
+      "url": "https://www.58.com",
+      "color": "#ff6a00"
+    },
+    {
+      "name": "国聘",
+      "url": "https://www.iguopin.com",
+      "color": "#c7000b"
+    },
+    {
+      "name": "中华英才网",
+      "url": "https://www.chinahr.com",
+      "color": "#ff6a00"
+    },
+    {
+      "name": "职友集",
+      "url": "https://www.jobui.com",
+      "color": "#1a73e8"
+    },
+    {
+      "name": "海投网",
+      "url": "https://www.haitou.cc",
+      "color": "#00a0a0"
+    },
+    {
+      "name": "梧桐果",
+      "url": "https://www.wutongguo.com",
+      "color": "#00b38a"
+    },
+    {
+      "name": "应届毕业生网",
+      "url": "https://www.yjbys.com",
+      "color": "#ff6a00"
     }
   ]
 };
@@ -100,7 +150,15 @@ function initTheme() {
   }
 }
 
-
+// ==================== AdSense: 分类页广告代码（独立代码块，仅分类页使用） ====================
+// 每个分类页共有 3 个广告位：网格广告 1（左上 2x2）、网格广告 2（右中 2x2）、页尾横幅。
+// 部署时请替换为 AdSense 后台的真实值：
+//   client : 你的发布商 ID，形如 ca-pub-1234567890123456
+//   pos1   : 网格广告 1 的广告单元 ID（在 AdSense 后台创建）
+//   pos2   : 网格广告 2 的广告单元 ID
+//   bottom : 分类页页尾广告的广告单元 ID
+// 注意：每个广告位必须使用独立的广告单元 ID。同一页面重复使用同一个广告单元 ID 时，
+//       AdSense 只会渲染第一个，其余广告位不显示，导致网格广告只显示部分。
 var CATEGORY_AD_UNITS = {
   client: 'ca-pub-6172791470588821',
   pos1: '4869723184',

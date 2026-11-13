@@ -1,6 +1,6 @@
 /**
  * 云服务 分类页 - 数据 + 应用逻辑
- * 10 个网站
+ * 40 个网站
  */
 
 var CATEGORY = {
@@ -57,6 +57,56 @@ var CATEGORY = {
       "name": "Oracle Cloud",
       "url": "https://www.oracle.com/cloud",
       "color": "#ff0000"
+    },
+    {
+      "name": "七牛云",
+      "url": "https://www.qiniu.com",
+      "color": "#00a0e9"
+    },
+    {
+      "name": "又拍云",
+      "url": "https://www.upyun.com",
+      "color": "#00b38a"
+    },
+    {
+      "name": "金山云",
+      "url": "https://www.ksyun.com",
+      "color": "#0066cc"
+    },
+    {
+      "name": "UCloud",
+      "url": "https://www.ucloud.cn",
+      "color": "#00a0e9"
+    },
+    {
+      "name": "青云",
+      "url": "https://www.qingcloud.com",
+      "color": "#1a73e8"
+    },
+    {
+      "name": "京东云",
+      "url": "https://www.jdcloud.com",
+      "color": "#e1251b"
+    },
+    {
+      "name": "天翼云",
+      "url": "https://www.ctyun.cn",
+      "color": "#0066cc"
+    },
+    {
+      "name": "移动云",
+      "url": "https://ecloud.10086.cn",
+      "color": "#00a0a0"
+    },
+    {
+      "name": "火山引擎",
+      "url": "https://www.volcengine.com",
+      "color": "#1a73e8"
+    },
+    {
+      "name": "世纪互联",
+      "url": "https://www.vianet.com.cn",
+      "color": "#0066cc"
     }
   ]
 };
@@ -100,7 +150,15 @@ function initTheme() {
   }
 }
 
-
+// ==================== AdSense: 分类页广告代码（独立代码块，仅分类页使用） ====================
+// 每个分类页共有 3 个广告位：网格广告 1（左上 2x2）、网格广告 2（右中 2x2）、页尾横幅。
+// 部署时请替换为 AdSense 后台的真实值：
+//   client : 你的发布商 ID，形如 ca-pub-1234567890123456
+//   pos1   : 网格广告 1 的广告单元 ID（在 AdSense 后台创建）
+//   pos2   : 网格广告 2 的广告单元 ID
+//   bottom : 分类页页尾广告的广告单元 ID
+// 注意：每个广告位必须使用独立的广告单元 ID。同一页面重复使用同一个广告单元 ID 时，
+//       AdSense 只会渲染第一个，其余广告位不显示，导致网格广告只显示部分。
 var CATEGORY_AD_UNITS = {
   client: 'ca-pub-6172791470588821',
   pos1: '4869723184',

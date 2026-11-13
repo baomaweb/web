@@ -1,6 +1,6 @@
 /**
  * 政府政务 分类页 - 数据 + 应用逻辑
- * 10 个网站
+ * 40 个网站
  */
 
 var CATEGORY = {
@@ -57,6 +57,56 @@ var CATEGORY = {
       "name": "国家卫健委",
       "url": "https://www.nhc.gov.cn",
       "color": "#0f81c7"
+    },
+    {
+      "name": "国家政务服务平台",
+      "url": "https://gjzwfw.www.gov.cn",
+      "color": "#c7000b"
+    },
+    {
+      "name": "全国人大",
+      "url": "http://www.npc.gov.cn",
+      "color": "#c7000b"
+    },
+    {
+      "name": "全国政协",
+      "url": "http://www.cppcc.gov.cn",
+      "color": "#c7000b"
+    },
+    {
+      "name": "最高人民法院",
+      "url": "https://www.court.gov.cn",
+      "color": "#c7000b"
+    },
+    {
+      "name": "最高人民检察院",
+      "url": "https://www.spp.gov.cn",
+      "color": "#c7000b"
+    },
+    {
+      "name": "公安部",
+      "url": "https://www.mps.gov.cn",
+      "color": "#c7000b"
+    },
+    {
+      "name": "教育部",
+      "url": "http://www.moe.gov.cn",
+      "color": "#c7000b"
+    },
+    {
+      "name": "财政部",
+      "url": "http://www.mof.gov.cn",
+      "color": "#c7000b"
+    },
+    {
+      "name": "国家统计局",
+      "url": "https://www.stats.gov.cn",
+      "color": "#c7000b"
+    },
+    {
+      "name": "国家税务总局",
+      "url": "http://www.chinatax.gov.cn",
+      "color": "#c7000b"
     }
   ]
 };
@@ -100,7 +150,15 @@ function initTheme() {
   }
 }
 
-
+// ==================== AdSense: 分类页广告代码（独立代码块，仅分类页使用） ====================
+// 每个分类页共有 3 个广告位：网格广告 1（左上 2x2）、网格广告 2（右中 2x2）、页尾横幅。
+// 部署时请替换为 AdSense 后台的真实值：
+//   client : 你的发布商 ID，形如 ca-pub-1234567890123456
+//   pos1   : 网格广告 1 的广告单元 ID（在 AdSense 后台创建）
+//   pos2   : 网格广告 2 的广告单元 ID
+//   bottom : 分类页页尾广告的广告单元 ID
+// 注意：每个广告位必须使用独立的广告单元 ID。同一页面重复使用同一个广告单元 ID 时，
+//       AdSense 只会渲染第一个，其余广告位不显示，导致网格广告只显示部分。
 var CATEGORY_AD_UNITS = {
   client: 'ca-pub-6172791470588821',
   pos1: '4869723184',

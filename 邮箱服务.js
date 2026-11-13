@@ -1,6 +1,6 @@
 /**
  * 邮箱服务 分类页 - 数据 + 应用逻辑
- * 10 个网站
+ * 40 个网站
  */
 
 var CATEGORY = {
@@ -8,33 +8,154 @@ var CATEGORY = {
   "name": "邮箱服务",
   "icon": "email",
   "sites": [
-  
- 
-   { name: '126邮箱', url: 'https://mail.126.com', favicon: 'favicon/email/126.ico' },
-   { name: '163邮箱', url: 'https://mail.163.com', favicon: 'favicon/email/163.ico' },
-   { name: 'QQ邮箱', url: 'https://mail.qq.com', favicon: 'favicon/email/qq邮箱.png' },
-   { name: 'Gmail', url: 'https://mail.google.com', favicon: 'favicon/email/gmail.ico' },
-   { name: 'Outlook', url: 'https://outlook.live.com', favicon: 'favicon/email/outlook.ico' },
-   { name: '新浪邮箱', url: 'https://mail.sina.com.cn', favicon: 'favicon/email/新浪邮箱.ico' },
-   { name: '搜狐邮箱', url: 'https://mail.sohu.com/', favicon: 'favicon/email/sohu邮箱.png' },
-   { name: 'yeah邮箱', url: 'https://mail.163.com', favicon: 'favicon/email/yeah.ico' },
-   { name: '139邮箱', url: 'https://mail.10086.cn', favicon: 'favicon/email/139邮箱.ico' },
-   { name: '21cn邮箱', url: 'https://mail.21cn.com/', favicon: 'favicon/email/21cn邮箱.ico' },
-   { name: 'tom邮箱', url: 'https://mail.tom.com/', favicon: 'favicon/email/tom邮箱.ico' },
-   { name: '263邮箱', url: 'https://mail.263.net/', favicon: 'favicon/email/263邮箱.ico' },
-   { name: '阿里邮箱', url: 'https://mail.aliyun.com/', favicon: 'favicon/email/阿里邮箱.ico' },
-   { name: '阿里企业邮箱', url: 'https://qiye.aliyun.com/', favicon: 'favicon/email/阿里企业邮箱.ico' },
-   { name: '新浪企业邮箱', url: 'https://mail.sina.net/', favicon: 'favicon/email/新浪企业邮箱.ico' },
-   { name: '网易企业邮箱', url: 'https://ym.163.com', favicon: 'favicon/email/网易企业邮箱.ico' },
-   
-   
-   
-   
-   { name: 'Yahoo Mail', url: 'https://mail.yahoo.com', favicon: 'favicon/email/yahoo邮箱.ico' },
-   { name: 'ProtonMail', url: 'https://proton.me/mail', favicon: 'favicon/email/proton.png' },
-   { name: 'Zoho Mail', url: 'https://www.zoho.com/mail', favicon: 'favicon/email/zoho.ico' },
-
-
+    {
+      "name": "126邮箱",
+      "url": "https://mail.126.com",
+      "color": "#4e6ef2",
+      "favicon": "favicon/email/126.ico"
+    },
+    {
+      "name": "163邮箱",
+      "url": "https://mail.163.com",
+      "color": "#00a0a0",
+      "favicon": "favicon/email/163.ico"
+    },
+    {
+      "name": "QQ邮箱",
+      "url": "https://mail.qq.com",
+      "color": "#ff6a00",
+      "favicon": "favicon/email/qq邮箱.png"
+    },
+    {
+      "name": "Gmail",
+      "url": "https://mail.google.com",
+      "color": "#e60012",
+      "favicon": "favicon/email/gmail.ico"
+    },
+    {
+      "name": "Outlook",
+      "url": "https://outlook.live.com",
+      "color": "#1a73e8",
+      "favicon": "favicon/email/outlook.ico"
+    },
+    {
+      "name": "新浪邮箱",
+      "url": "https://mail.sina.com.cn",
+      "color": "#00b38a",
+      "favicon": "favicon/email/新浪邮箱.ico"
+    },
+    {
+      "name": "搜狐邮箱",
+      "url": "https://mail.sohu.com/",
+      "color": "#c7000b",
+      "favicon": "favicon/email/sohu邮箱.png"
+    },
+    {
+      "name": "139邮箱",
+      "url": "https://mail.10086.cn",
+      "color": "#2c8fbb",
+      "favicon": "favicon/email/139邮箱.ico"
+    },
+    {
+      "name": "21cn邮箱",
+      "url": "https://mail.21cn.com/",
+      "color": "#ff5000",
+      "favicon": "favicon/email/21cn邮箱.ico"
+    },
+    {
+      "name": "tom邮箱",
+      "url": "https://mail.tom.com/",
+      "color": "#8b1a1a",
+      "favicon": "favicon/email/tom邮箱.ico"
+    },
+    {
+      "name": "Email完美邮箱",
+      "url": "https://www.email.cn/",
+      "color": "#4e6ef2",
+      "favicon": "favicon/email/email.cn.png"
+    },
+    {
+      "name": "88完美邮箱",
+      "url": "https://www.88.com/",
+      "color": "#1677ff"
+    },
+    {
+      "name": "111完美邮箱",
+      "url": "https://www.111.com/",
+      "color": "#2c8fbb"
+    },
+    {
+      "name": "263邮箱",
+      "url": "https://mail.263.net/",
+      "color": "#e60012",
+      "favicon": "favicon/email/263邮箱.ico"
+    },
+    {
+      "name": "阿里邮箱",
+      "url": "https://mail.aliyun.com/",
+      "color": "#1a73e8",
+      "favicon": "favicon/email/阿里邮箱.ico"
+    },
+    {
+      "name": "阿里企业邮箱",
+      "url": "https://qiye.aliyun.com/",
+      "color": "#00b38a",
+      "favicon": "favicon/email/阿里企业邮箱.ico"
+    },
+    {
+      "name": "新浪企业邮箱",
+      "url": "https://mail.sina.net/",
+      "color": "#c7000b",
+      "favicon": "favicon/email/新浪企业邮箱.ico"
+    },
+    {
+      "name": "网易企业邮箱",
+      "url": "https://ym.163.com",
+      "color": "#2c8fbb",
+      "favicon": "favicon/email/网易企业邮箱.ico"
+    },
+    {
+      "name": "Yahoo Mail",
+      "url": "https://mail.yahoo.com",
+      "color": "#ff5000",
+      "favicon": "favicon/email/yahoo邮箱.ico"
+    },
+    {
+      "name": "ProtonMail",
+      "url": "https://proton.me/mail",
+      "color": "#8b1a1a",
+      "favicon": "favicon/email/proton.png"
+    },
+    {
+      "name": "Zoho Mail",
+      "url": "https://www.zoho.com/mail",
+      "color": "#4e6ef2",
+      "favicon": "favicon/email/zoho.ico"
+    },
+    {
+      "name": "Mail",
+      "url": "https://www.mail.com/",
+      "color": "#00a0a0",
+      "favicon": "favicon/email/mail.png"
+    },
+    {
+      "name": "Yandex Mail",
+      "url": "https://360.yandex.com/mail/",
+      "color": "#ff6a00",
+      "favicon": "favicon/email/yandex.png"
+    },
+    {
+      "name": "gmx Mail",
+      "url": "https://www.gmx.com/",
+      "color": "#e60012",
+      "favicon": "favicon/email/gmx.ico"
+    },
+    {
+      "name": "tuta Mail",
+      "url": "https://tuta.com/",
+      "color": "#1a73e8",
+      "favicon": "favicon/email/tuta.png"
+    }
   ]
 };
 
@@ -77,7 +198,15 @@ function initTheme() {
   }
 }
 
-
+// ==================== AdSense: 分类页广告代码（独立代码块，仅分类页使用） ====================
+// 每个分类页共有 3 个广告位：网格广告 1（左上 2x2）、网格广告 2（右中 2x2）、页尾横幅。
+// 部署时请替换为 AdSense 后台的真实值：
+//   client : 你的发布商 ID，形如 ca-pub-1234567890123456
+//   pos1   : 网格广告 1 的广告单元 ID（在 AdSense 后台创建）
+//   pos2   : 网格广告 2 的广告单元 ID
+//   bottom : 分类页页尾广告的广告单元 ID
+// 注意：每个广告位必须使用独立的广告单元 ID。同一页面重复使用同一个广告单元 ID 时，
+//       AdSense 只会渲染第一个，其余广告位不显示，导致网格广告只显示部分。
 var CATEGORY_AD_UNITS = {
   client: 'ca-pub-6172791470588821',
   pos1: '4869723184',
