@@ -1,6 +1,6 @@
 /**
- * 文档参考 分类页 - 数据 + 应用逻辑
- * 10 个网站
+ * 开发文档 分类页 - 数据 + 应用逻辑
+ * 40 个网站
  */
 
 var CATEGORY = {
@@ -8,35 +8,142 @@ var CATEGORY = {
   "name": "开发文档",
   "icon": "devdocs",
   "sites": [
-   { name: 'Vue.js', url: 'https://cn.vuejs.org', favicon: 'favicon/devdocs/vue.png' },
-   { name: 'React', url: 'https://react.dev', favicon: 'favicon/devdocs/react.png' },
-   { name: 'TypeScript', url: 'https://www.typescriptlang.org', favicon: 'favicon/devdocs/typescript.png' },
-   { name: 'Tailwind CSS', url: 'https://tailwindcss.com', favicon: 'favicon/devdocs/tailwind.png' },
-   { name: 'Next.js', url: 'https://nextjs.org', favicon: 'favicon/devdocs/nextjs.ico' },
-   { name: 'Python', url: 'https://www.python.org', favicon: 'favicon/devdocs/python.ico' },
-   { name: 'Go', url: 'https://go.dev', favicon: 'favicon/devdocs/go.png' },
-   { name: 'Rust', url: 'https://www.rust-lang.org', favicon: 'favicon/devdocs/rust.png' },
-   { name: 'Node.js', url: 'https://nodejs.org', favicon: 'favicon/devdocs/node.png' },
-   { name: 'Docker', url: 'https://www.docker.com', favicon: 'favicon/devdocs/docker.png' },
-   { name: 'Wolfram Alpha', url: 'https://www.wolframalpha.com', favicon: 'favicon/devdocs/wolframalpha.ico' },   
-   { name: 'Angular ', url: 'https://angular.io/', favicon: 'favicon/devdocs/angular.png' },
-   { name: 'Svelte', url: 'https://svelte.dev/', favicon: 'favicon/devdocs/svelte.png' },
-   { name: 'Solid.js ', url: 'https://www.solidjs.com/', favicon: 'favicon/devdocs/solidjs.png' },
-   { name: 'Bootstrap', url: 'https://getbootstrap.com', favicon: 'favicon/devdocs/getbootstrap.ico' },
-   { name: 'Bootstrap中文网', url: 'https://www.bootcss.com/', favicon: 'favicon/devdocs/bootcss.ico' },
-   { name: 'Backbone.js', url: 'https://backbonejs.org', favicon: 'favicon/devdocs/backbonejs.ico' },
-   { name: 'Ember.js', url: 'https://emberjs.com', favicon: 'favicon/devdocs/emberjs.ico' },
-   { name: 'Preact', url: 'https://www.preactjs.com.cn/', favicon: 'favicon/devdocs/preactjs.ico' },
-   { name: 'uni-app', url: 'https://uniapp.dcloud.io/', favicon: 'favicon/devdocs/uniapp.png' },
-   { name: 'Hexo', url: 'https://hexo.io/', favicon: 'favicon/devdocs/hexo.png' },
-   { name: 'npmjs', url: 'https://www.npmjs.com/', favicon: 'favicon/devdocs/npmjs.png' },
-   
-
-
+    {
+      "name": "Vue.js",
+      "url": "https://cn.vuejs.org",
+      "color": "#4e6ef2",
+      "favicon": "favicon/devdocs/vue.png"
+    },
+    {
+      "name": "React",
+      "url": "https://react.dev",
+      "color": "#00a0a0",
+      "favicon": "favicon/devdocs/react.png"
+    },
+    {
+      "name": "TypeScript",
+      "url": "https://www.typescriptlang.org",
+      "color": "#ff6a00",
+      "favicon": "favicon/devdocs/typescript.png"
+    },
+    {
+      "name": "Tailwind CSS",
+      "url": "https://tailwindcss.com",
+      "color": "#e60012",
+      "favicon": "favicon/devdocs/tailwind.png"
+    },
+    {
+      "name": "Next.js",
+      "url": "https://nextjs.org",
+      "color": "#1a73e8",
+      "favicon": "favicon/devdocs/nextjs.ico"
+    },
+    {
+      "name": "Python",
+      "url": "https://www.python.org",
+      "color": "#00b38a",
+      "favicon": "favicon/devdocs/python.ico"
+    },
+    {
+      "name": "Go",
+      "url": "https://go.dev",
+      "color": "#c7000b",
+      "favicon": "favicon/devdocs/go.png"
+    },
+    {
+      "name": "Rust",
+      "url": "https://www.rust-lang.org",
+      "color": "#2c8fbb",
+      "favicon": "favicon/devdocs/rust.png"
+    },
+    {
+      "name": "Node.js",
+      "url": "https://nodejs.org",
+      "color": "#ff5000",
+      "favicon": "favicon/devdocs/node.png"
+    },
+    {
+      "name": "Docker",
+      "url": "https://www.docker.com",
+      "color": "#8b1a1a",
+      "favicon": "favicon/devdocs/docker.png"
+    },
+    {
+      "name": "Wolfram Alpha",
+      "url": "https://www.wolframalpha.com",
+      "color": "#4e6ef2",
+      "favicon": "favicon/devdocs/wolframalpha.ico"
+    },
+    {
+      "name": "Angular ",
+      "url": "https://angular.io/",
+      "color": "#00a0a0",
+      "favicon": "favicon/devdocs/angular.png"
+    },
+    {
+      "name": "Svelte",
+      "url": "https://svelte.dev/",
+      "color": "#ff6a00",
+      "favicon": "favicon/devdocs/svelte.png"
+    },
+    {
+      "name": "Solid.js ",
+      "url": "https://www.solidjs.com/",
+      "color": "#e60012",
+      "favicon": "favicon/devdocs/solidjs.png"
+    },
+    {
+      "name": "Bootstrap",
+      "url": "https://getbootstrap.com",
+      "color": "#1a73e8",
+      "favicon": "favicon/devdocs/getbootstrap.ico"
+    },
+    {
+      "name": "Bootstrap中文网",
+      "url": "https://www.bootcss.com/",
+      "color": "#00b38a",
+      "favicon": "favicon/devdocs/bootcss.ico"
+    },
+    {
+      "name": "Backbone.js",
+      "url": "https://backbonejs.org",
+      "color": "#c7000b",
+      "favicon": "favicon/devdocs/backbonejs.ico"
+    },
+    {
+      "name": "Ember.js",
+      "url": "https://emberjs.com",
+      "color": "#2c8fbb",
+      "favicon": "favicon/devdocs/emberjs.ico"
+    },
+    {
+      "name": "Preact",
+      "url": "https://www.preactjs.com.cn/",
+      "color": "#ff5000",
+      "favicon": "favicon/devdocs/preactjs.ico"
+    },
+    {
+      "name": "uni-app",
+      "url": "https://uniapp.dcloud.io/",
+      "color": "#8b1a1a",
+      "favicon": "favicon/devdocs/uniapp.png"
+    },
+    {
+      "name": "Hexo",
+      "url": "https://hexo.io/",
+      "color": "#4e6ef2",
+      "favicon": "favicon/devdocs/hexo.png"
+    },
+    {
+      "name": "npmjs",
+      "url": "https://www.npmjs.com/",
+      "color": "#00a0a0",
+      "favicon": "favicon/devdocs/npmjs.png"
+    }
   ]
 };
 
-var ICON_SVG = '';
+var ICON_SVG = '<svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" fill="#3178c6"/><path d="M14 2v6h6" fill="#06b6d4"/><rect x="8" y="12" width="8" height="1.5" rx="0.75" fill="#fff"/><rect x="8" y="15" width="6" height="1.5" rx="0.75" fill="#fff"/><rect x="8" y="18" width="4" height="1.5" rx="0.75" fill="#fff"/></svg>';
 function getInitial(name) {
   return name.charAt(0).toUpperCase();
 }
@@ -75,7 +182,15 @@ function initTheme() {
   }
 }
 
-
+// ==================== AdSense: 分类页广告代码（独立代码块，仅分类页使用） ====================
+// 每个分类页共有 3 个广告位：网格广告 1（左上 2x2）、网格广告 2（右中 2x2）、页尾横幅。
+// 部署时请替换为 AdSense 后台的真实值：
+//   client : 你的发布商 ID，形如 ca-pub-1234567890123456
+//   pos1   : 网格广告 1 的广告单元 ID（在 AdSense 后台创建）
+//   pos2   : 网格广告 2 的广告单元 ID
+//   bottom : 分类页页尾广告的广告单元 ID
+// 注意：每个广告位必须使用独立的广告单元 ID。同一页面重复使用同一个广告单元 ID 时，
+//       AdSense 只会渲染第一个，其余广告位不显示，导致网格广告只显示部分。
 var CATEGORY_AD_UNITS = {
   client: 'ca-pub-6172791470588821',
   pos1: '4869723184',
