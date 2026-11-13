@@ -1,5 +1,5 @@
 /**
- * NavHub - 通用应用逻辑
+ * 宝马生活-网址导航 - 通用应用逻辑
  * 主题切换 + 首页渲染 + 分类页渲染 + 自定义 favicon 加载
  *
  * favicon 来源：data.js 中每个网站的 favicon 字段
@@ -43,7 +43,16 @@ function initTheme() {
   }
 }
 
-
+// ==================== AdSense: 首页广告代码（独立代码块，仅首页使用） ====================
+// 首页共有 3 个广告位：网格广告 1（第 3-4 行第 1-2 列，占 2×2 四格）、
+// 网格广告 2（第 6-7 行第 5-6 列，占 2×2 四格）、页尾横幅。
+// 部署时请替换为 AdSense 后台的真实值：
+//   client : 你的发布商 ID，形如 ca-pub-1234567890123456
+//   grid1  : 网格广告 1 的广告单元 ID（在 AdSense 后台「广告单元」中创建，10 位左右数字）
+//   grid2  : 网格广告 2 的广告单元 ID
+//   bottom : 首页页尾广告的广告单元 ID
+// 注意：每个广告位必须使用独立的广告单元 ID。同一页面重复使用同一个广告单元 ID 时，
+//       AdSense 只会渲染第一个，其余广告位不显示，导致网格广告只显示部分。
 var HOME_AD_UNITS = {
   client: 'ca-pub-6172791470588821',
   grid1: '5061294877',
@@ -52,8 +61,10 @@ var HOME_AD_UNITS = {
 };
 
 function homeAdCardHtml(slotKey) {
+  // 两个广告位使用不同定位类：grid1 -> 第 3-4 行第 1-2 列；grid2 -> 第 6-7 行第 5-6 列
+  var posClass = slotKey === 'grid2' ? 'ad-card--pos2' : 'ad-card--pos1';
   var h = '';
-  h += '<div class="ad-card ad-card--colspan2">';
+  h += '<div class="ad-card ' + posClass + '">';
   h += '<ins class="adsbygoogle"\n';
   h += '     style="display:block;width:100%;height:100%"\n';
   h += '     data-ad-client="' + HOME_AD_UNITS.client + '"\n';
@@ -69,19 +80,8 @@ function renderHome() {
   var grid = document.getElementById('catGrid');
   if (!grid) return;
   var html = '';
-  var adInserted1 = false;
-  var adInserted2 = false;
 
   CATEGORIES.forEach(function(cat, idx) {
-    // 第 1 个 AdSense 网格卡片：第 2 行左侧，横向占 2 格（第 2 行第 1-2 列）
-    if (idx === 6) {
-      html += homeAdCardHtml('grid1');
-    }
-    // 第 2 个 AdSense 网格卡片：第 4 行最右侧横向占 2 格（第 4 行第 5-6 列），与第 1 个不相邻
-    if (idx === 20) {
-      html += homeAdCardHtml('grid2');
-    }
-
     var iconSvg = ICON_SVG[cat.icon] || '';
     var tint = getCardTint(idx);
     var tintColor = store.get('theme') === 'light' ? tint.light : tint.dark;
@@ -92,6 +92,11 @@ function renderHome() {
     html += '<div class="cat-card-name">' + cat.name + '</div>';
     html += '</a>';
   });
+
+  // 两个广告格由 CSS 显式定位到指定行列（不参与分类卡片自动流占位），统一追加在末尾
+  html += homeAdCardHtml('grid1');
+  html += homeAdCardHtml('grid2');
+
   grid.innerHTML = html;
   pushAllAds();
 }

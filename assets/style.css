@@ -237,11 +237,11 @@ body {
 
 .cat-card {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
-  gap: 8px;
-  padding: 12px 6px;
+  justify-content: flex-start;
+  gap: 10px;
+  padding: 0 12px;
   background: var(--bg-card);
   border: 1px solid var(--border-color);
   border-radius: 10px;
@@ -251,7 +251,8 @@ body {
   position: relative;
   overflow: hidden;
   cursor: pointer;
-  aspect-ratio: 1 / 1;
+  /* 长方形卡片：高度为原正方形（1/1）的一半 */
+  aspect-ratio: 2 / 1;
 }
 .cat-card-tint {
   position: absolute;
@@ -280,20 +281,23 @@ body {
 .cat-card:active { transform: translateY(-1px); }
 
 .cat-card-icon {
-  width: 44px;
-  height: 44px;
-  border-radius: 10px;
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
 }
-.cat-card-icon svg { width: 28px; height: 28px; }
+.cat-card-icon svg { width: 20px; height: 20px; }
 
 .cat-card-name {
-  font-size: 22px;
+  font-size: 16px;
   font-weight: 600;
-  text-align: center;
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 /* AdSense grid card base - occupies one grid cell */
@@ -326,9 +330,9 @@ body {
   border: 0;
 }
 
-/* AdSense grid card in cat-grid (home) - single cell, square */
+/* AdSense grid card in cat-grid (home) - 尺寸由下方显式定位规则决定 */
 .cat-grid .ad-card {
-  aspect-ratio: 1 / 1;
+  aspect-ratio: auto;
 }
 
 /* ==================== Category Detail Page ==================== */
@@ -394,9 +398,9 @@ body {
 /* AdSense grid card in site-grid - variant 1: spans 2 rows (vertical) */
 /* （已废弃：分类页使用 pos1/pos2 显式定位，不再使用 span2/span2x2 variant） */
 
-/* AdSense grid card in cat-grid (home) - single cell, square */
+/* AdSense grid card in cat-grid (home) - 尺寸由下方显式定位规则决定 */
 .cat-grid .ad-card {
-  aspect-ratio: 1 / 1;
+  aspect-ratio: auto;
 }
 
 .site-favicon {
@@ -481,11 +485,11 @@ body {
   .home-hero { padding: 20px 14px; margin-bottom: 20px; }
   .home-hero h1 { font-size: 17px; }
   .home-hero p { font-size: 12px; }
-  .cat-grid { grid-template-columns: repeat(5, 1fr); gap: 10px; }
-  .cat-card { padding: 10px 5px; gap: 6px; border-radius: 8px; }
-  .cat-card-icon { width: 36px; height: 36px; border-radius: 8px; }
-  .cat-card-icon svg { width: 20px; height: 20px; }
-  .cat-card-name { font-size: 18px; }
+  .cat-grid { grid-template-columns: repeat(4, 1fr); gap: 10px; }
+  .cat-card { padding: 0 8px; gap: 8px; border-radius: 8px; }
+  .cat-card-icon { width: 28px; height: 28px; border-radius: 7px; }
+  .cat-card-icon svg { width: 18px; height: 18px; }
+  .cat-card-name { font-size: 14px; }
   .cat-detail-title { font-size: 16px; }
   .site-grid { grid-template-columns: repeat(3, 1fr); gap: 10px; }
   .site-item { padding: 10px 12px; gap: 8px; border-radius: 10px; }
@@ -500,10 +504,10 @@ body {
   .home-hero h1 { font-size: 15px; }
   .home-hero p { font-size: 11px; }
   .cat-grid { grid-template-columns: repeat(4, 1fr); gap: 8px; }
-  .cat-card { padding: 8px 4px; gap: 5px; }
-  .cat-card-icon { width: 32px; height: 32px; border-radius: 6px; }
-  .cat-card-icon svg { width: 18px; height: 18px; }
-  .cat-card-name { font-size: 16px; }
+  .cat-card { padding: 0 6px; gap: 6px; }
+  .cat-card-icon { width: 26px; height: 26px; border-radius: 6px; }
+  .cat-card-icon svg { width: 16px; height: 16px; }
+  .cat-card-name { font-size: 13px; }
   .site-grid { grid-template-columns: repeat(2, 1fr); gap: 8px; }
   .site-item { padding: 9px 10px; gap: 8px; }
   .site-favicon { width: 22px; height: 22px; border-radius: 5px; }
@@ -515,10 +519,10 @@ body {
 
 @media (max-width: 360px) {
   .cat-grid { grid-template-columns: repeat(3, 1fr); gap: 6px; }
-  .cat-card { padding: 6px 3px; }
-  .cat-card-icon { width: 28px; height: 28px; }
-  .cat-card-icon svg { width: 16px; height: 16px; }
-  .cat-card-name { font-size: 14px; }
+  .cat-card { padding: 0 5px; gap: 5px; }
+  .cat-card-icon { width: 24px; height: 24px; }
+  .cat-card-icon svg { width: 15px; height: 15px; }
+  .cat-card-name { font-size: 12px; }
   .site-grid { grid-template-columns: 1fr; gap: 6px; }
   .site-item { padding: 8px 10px; }
   .site-favicon { width: 20px; height: 20px; }
@@ -539,10 +543,18 @@ body {
 }
 
 /* ==================== AdSense Placement ==================== */
-/* Home cat-grid: ad card spans 2 columns, stretches to the same height as the
-   square cat-cards in the same row（首页广告栏高度与其他网格一致）。 */
-.cat-grid .ad-card--colspan2 {
-  grid-column: span 2;
+/* Home cat-grid: ad #1 rows 3-4, cols 1-2 (2×2 = 上下左右四格). */
+.cat-grid .ad-card--pos1 {
+  grid-row: 3 / span 2;
+  grid-column: 1 / span 2;
+  aspect-ratio: auto;
+  align-self: stretch;
+}
+
+/* Home cat-grid: ad #2 rows 6-7, cols 5-6 (2×2 = 上下左右四格). */
+.cat-grid .ad-card--pos2 {
+  grid-row: 6 / span 2;
+  grid-column: 5 / span 2;
   aspect-ratio: auto;
   align-self: stretch;
 }
@@ -571,15 +583,23 @@ body {
 }
 
 /* ==================== Responsive Ad Degradation ==================== */
-/* Must come AFTER .ad-card--pos1/pos2 definitions so same-specificity rules
-   here win on narrow screens. Full-width row keeps cells on defined tracks,
-   avoiding implicit-column overflow when the grid has 3/2/1 columns.
-   min-height: 102px => 内容区实际 100px，容纳移动端常见的 320x100 横向横幅；
-   同时避免桌面 252/282px 的矩形广告格在窄屏占 2 行卡片高度、挤压网格。 */
+/* Must come AFTER the placement definitions so same-specificity rules here win
+   on narrow screens. Full-width row keeps cells on defined tracks, avoiding
+   implicit-column overflow when the grid has fewer than 6 columns.
+   min-height: 102px => 内容区实际 100px，容纳移动端常见的 320x100 横向横幅。 */
+@media (max-width: 1024px) {
+  /* 首页 cat-grid 降为 5 列后，2×2 定位会超出列数，改为整行通栏 */
+  .cat-grid .ad-card--pos1,
+  .cat-grid .ad-card--pos2 {
+    grid-row: auto;
+    grid-column: 1 / -1;
+    min-height: 102px;
+  }
+}
+
 @media (max-width: 768px) {
   .site-grid .ad-card--pos1,
-  .site-grid .ad-card--pos2,
-  .cat-grid .ad-card--colspan2 {
+  .site-grid .ad-card--pos2 {
     grid-row: auto;
     grid-column: 1 / -1;
     min-height: 102px;
