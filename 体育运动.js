@@ -1,6 +1,6 @@
 /**
  * 体育运动 分类页 - 数据 + 应用逻辑
- * 10 个网站
+ * 40 个网站
  */
 
 var CATEGORY = {
@@ -57,6 +57,56 @@ var CATEGORY = {
       "name": "悦跑圈",
       "url": "https://www.joyrun.com",
       "color": "#00be06"
+    },
+    {
+      "name": "直播吧",
+      "url": "https://www.zhibo8.cc",
+      "color": "#c7000b"
+    },
+    {
+      "name": "咪咕视频",
+      "url": "https://www.miguvideo.com",
+      "color": "#ff6a00"
+    },
+    {
+      "name": "Nike中国",
+      "url": "https://www.nike.com.cn",
+      "color": "#1a1a1a"
+    },
+    {
+      "name": "阿迪达斯",
+      "url": "https://www.adidas.com.cn",
+      "color": "#000000"
+    },
+    {
+      "name": "Keep",
+      "url": "https://www.keep.com",
+      "color": "#00b38a"
+    },
+    {
+      "name": "悦跑圈",
+      "url": "https://www.joyrun.cn",
+      "color": "#ff6a00"
+    },
+    {
+      "name": "咕咚",
+      "url": "https://www.codoon.com",
+      "color": "#00b38a"
+    },
+    {
+      "name": "薄荷健康",
+      "url": "https://www.boohee.com",
+      "color": "#00a0a0"
+    },
+    {
+      "name": "超级猩猩",
+      "url": "https://www.supermonkey.com.cn",
+      "color": "#ff6a00"
+    },
+    {
+      "name": "乐刻运动",
+      "url": "https://www.leke.com",
+      "color": "#1a1a1a"
     }
   ]
 };
@@ -100,7 +150,15 @@ function initTheme() {
   }
 }
 
-
+// ==================== AdSense: 分类页广告代码（独立代码块，仅分类页使用） ====================
+// 每个分类页共有 3 个广告位：网格广告 1（左上 2x2）、网格广告 2（右中 2x2）、页尾横幅。
+// 部署时请替换为 AdSense 后台的真实值：
+//   client : 你的发布商 ID，形如 ca-pub-1234567890123456
+//   pos1   : 网格广告 1 的广告单元 ID（在 AdSense 后台创建）
+//   pos2   : 网格广告 2 的广告单元 ID
+//   bottom : 分类页页尾广告的广告单元 ID
+// 注意：每个广告位必须使用独立的广告单元 ID。同一页面重复使用同一个广告单元 ID 时，
+//       AdSense 只会渲染第一个，其余广告位不显示，导致网格广告只显示部分。
 var CATEGORY_AD_UNITS = {
   client: 'ca-pub-6172791470588821',
   pos1: '4869723184',
