@@ -1,6 +1,6 @@
 /**
  * 新闻资讯 分类页 - 数据 + 应用逻辑
- * 10 个网站
+ * 40 个网站
  */
 
 var CATEGORY = {
@@ -8,34 +8,168 @@ var CATEGORY = {
   "name": "新闻资讯",
   "icon": "news",
   "sites": [
-  	{ name: '央视新闻', url:'https://news.cctv.com/', favicon: 'favicon/news/cctv.ico'},
-	{ name: '新华网', url:'https://www.news.cn/', favicon: 'favicon/news/新华网.ico'},
-	{ name: '人民网', url:'https://www.people.com.cn/', favicon: 'favicon/news/人民网.ico'},
-	{ name: '求是网', url:'https://www.qstheory.cn/', favicon: 'favicon/news/求是网.ico'},
-	{ name: '中国新闻网', url:'https://www.chinanews.com.cn/', favicon: 'favicon/news/中国新闻网.ico'},
-	{ name: '光明网', url:'https://www.gmw.cn/', favicon: 'favicon/news/光明网.ico'},
-	{ name: '凤凰网', url:'https://www.ifeng.com/', favicon: 'favicon/news/凤凰网.ico'},
-	{ name: '澎湃', url:'https://www.thepaper.cn/', favicon: 'favicon/news/澎湃.ico'},
-	{ name: '环球网', url:'https://www.huanqiu.com/', favicon: 'favicon/news/环球网.png'},
-	{ name: '虎嗅', url:'https://www.huxiu.com/', favicon: 'favicon/news/虎嗅.ico'},
-	{ name: '36氪', url:'https://www.huxiu.com/', favicon: 'favicon/news/36氪.ico'},
-	{ name: '南方周末', url:'https://www.infzm.com/', favicon: 'favicon/news/南方周末.ico'},
-	{ name: '看看新闻', url:'https://www.kankanews.com/', favicon: 'favicon/news/看看新闻.ico'},
-	{ name: '界面新闻', url:'https://www.jiemian.com/', favicon: 'favicon/news/界面新闻.ico'},
-	{ name: '封面新闻', url:'https://www.thecover.cn/', favicon: 'favicon/news/封面新闻.png'},
-	{ name: '新京报', url:'https://www.bjnews.com.cn/', favicon: 'favicon/news/新京报.ico'},
-	{ name: '网易新闻', url:'https://news.163.com', favicon: 'favicon/news/网易新闻.ico'},
-	{ name: '腾讯新闻', url:'https://news.qq.com', favicon: 'favicon/news/腾讯新闻.ico'},
-	{ name: '三联生活周刊', url:'https://www.lifeweek.com.cn/', favicon: 'favicon/news/三联生活周刊.ico'},
-	{ name: '东方网', url:'https://www.eastday.com/', favicon: 'favicon/news/东方网.ico'},
-	{ name: '一点资讯', url:'https://www.yidianzixun.com/', favicon: 'favicon/news/一点资讯.ico'},
-	{ name: '中青在线', url:'https://www.cyol.com/', favicon: 'favicon/news/中青在线.png'},
-	{ name: '中国日报网', url:'https://cn.chinadaily.com.cn/', favicon: 'favicon/news/中国日报网.ico'},
-	{ name: '中华网', url:'https://www.china.com/', favicon: 'favicon/news/中华网.ico'},
-	{ name: '央广网', url:'https://www.cnr.cn/', favicon: 'favicon/news/央广网.ico'},
-	{ name: '千龙网', url:'https://www.qianlong.com/', favicon: 'favicon/news/千龙网.ico'},
-	{ name: '新闻晨报', url:'https://www.shxwcb.com/', favicon: 'favicon/news/新闻晨报.png'},
-	{ name: '大河网', url:'https://www.dahe.cn/', favicon: 'favicon/news/大河网.ico'},
+    {
+      "name": "央视新闻",
+      "url": "https://news.cctv.com/",
+      "color": "#4e6ef2",
+      "favicon": "favicon/news/cctv.ico"
+    },
+    {
+      "name": "新华网",
+      "url": "https://www.news.cn/",
+      "color": "#00a0a0",
+      "favicon": "favicon/news/新华网.ico"
+    },
+    {
+      "name": "人民网",
+      "url": "https://www.people.com.cn/",
+      "color": "#ff6a00",
+      "favicon": "favicon/news/人民网.ico"
+    },
+    {
+      "name": "求是网",
+      "url": "https://www.qstheory.cn/",
+      "color": "#e60012",
+      "favicon": "favicon/news/求是网.ico"
+    },
+    {
+      "name": "中国新闻网",
+      "url": "https://www.chinanews.com.cn/",
+      "color": "#1a73e8",
+      "favicon": "favicon/news/中国新闻网.ico"
+    },
+    {
+      "name": "光明网",
+      "url": "https://www.gmw.cn/",
+      "color": "#00b38a",
+      "favicon": "favicon/news/光明网.ico"
+    },
+    {
+      "name": "凤凰网",
+      "url": "https://www.ifeng.com/",
+      "color": "#c7000b",
+      "favicon": "favicon/news/凤凰网.ico"
+    },
+    {
+      "name": "澎湃",
+      "url": "https://www.thepaper.cn/",
+      "color": "#2c8fbb",
+      "favicon": "favicon/news/澎湃.ico"
+    },
+    {
+      "name": "环球网",
+      "url": "https://www.huanqiu.com/",
+      "color": "#ff5000",
+      "favicon": "favicon/news/环球网.png"
+    },
+    {
+      "name": "虎嗅",
+      "url": "https://www.huxiu.com/",
+      "color": "#8b1a1a",
+      "favicon": "favicon/news/虎嗅.ico"
+    },
+    {
+      "name": "南方周末",
+      "url": "https://www.infzm.com/",
+      "color": "#4e6ef2",
+      "favicon": "favicon/news/南方周末.ico"
+    },
+    {
+      "name": "看看新闻",
+      "url": "https://www.kankanews.com/",
+      "color": "#00a0a0",
+      "favicon": "favicon/news/看看新闻.ico"
+    },
+    {
+      "name": "界面新闻",
+      "url": "https://www.jiemian.com/",
+      "color": "#ff6a00",
+      "favicon": "favicon/news/界面新闻.ico"
+    },
+    {
+      "name": "封面新闻",
+      "url": "https://www.thecover.cn/",
+      "color": "#e60012",
+      "favicon": "favicon/news/封面新闻.png"
+    },
+    {
+      "name": "新京报",
+      "url": "https://www.bjnews.com.cn/",
+      "color": "#1a73e8",
+      "favicon": "favicon/news/新京报.ico"
+    },
+    {
+      "name": "网易新闻",
+      "url": "https://news.163.com",
+      "color": "#00b38a",
+      "favicon": "favicon/news/网易新闻.ico"
+    },
+    {
+      "name": "腾讯新闻",
+      "url": "https://news.qq.com",
+      "color": "#c7000b",
+      "favicon": "favicon/news/腾讯新闻.ico"
+    },
+    {
+      "name": "三联生活周刊",
+      "url": "https://www.lifeweek.com.cn/",
+      "color": "#2c8fbb",
+      "favicon": "favicon/news/三联生活周刊.ico"
+    },
+    {
+      "name": "东方网",
+      "url": "https://www.eastday.com/",
+      "color": "#ff5000",
+      "favicon": "favicon/news/东方网.ico"
+    },
+    {
+      "name": "一点资讯",
+      "url": "https://www.yidianzixun.com/",
+      "color": "#8b1a1a",
+      "favicon": "favicon/news/一点资讯.ico"
+    },
+    {
+      "name": "中青在线",
+      "url": "https://www.cyol.com/",
+      "color": "#4e6ef2",
+      "favicon": "favicon/news/中青在线.png"
+    },
+    {
+      "name": "中国日报网",
+      "url": "https://cn.chinadaily.com.cn/",
+      "color": "#00a0a0",
+      "favicon": "favicon/news/中国日报网.ico"
+    },
+    {
+      "name": "中华网",
+      "url": "https://www.china.com/",
+      "color": "#ff6a00",
+      "favicon": "favicon/news/中华网.ico"
+    },
+    {
+      "name": "央广网",
+      "url": "https://www.cnr.cn/",
+      "color": "#e60012",
+      "favicon": "favicon/news/央广网.ico"
+    },
+    {
+      "name": "千龙网",
+      "url": "https://www.qianlong.com/",
+      "color": "#1a73e8",
+      "favicon": "favicon/news/千龙网.ico"
+    },
+    {
+      "name": "新闻晨报",
+      "url": "https://www.shxwcb.com/",
+      "color": "#00b38a",
+      "favicon": "favicon/news/新闻晨报.png"
+    },
+    {
+      "name": "大河网",
+      "url": "https://www.dahe.cn/",
+      "color": "#c7000b",
+      "favicon": "favicon/news/大河网.ico"
+    },
     {
       "name": "今日头条",
       "url": "https://www.toutiao.com",
@@ -50,11 +184,6 @@ var CATEGORY = {
       "name": "南方网",
       "url": "https://www.southcn.com/",
       "color": "#ff5a36"
-    },
-    {
-      "name": "澎湃新闻",
-      "url": "https://www.thepaper.cn",
-      "color": "#ff7700"
     },
     {
       "name": "搜狐新闻",
@@ -85,6 +214,11 @@ var CATEGORY = {
       "name": "路透社",
       "url": "https://www.reuters.com",
       "color": "#ff6600"
+    },
+    {
+      "name": "36氪",
+      "url": "https://36kr.com",
+      "color": "#0061ff"
     }
   ]
 };
@@ -128,7 +262,15 @@ function initTheme() {
   }
 }
 
-
+// ==================== AdSense: 分类页广告代码（独立代码块，仅分类页使用） ====================
+// 每个分类页共有 3 个广告位：网格广告 1（左上 2x2）、网格广告 2（右中 2x2）、页尾横幅。
+// 部署时请替换为 AdSense 后台的真实值：
+//   client : 你的发布商 ID，形如 ca-pub-1234567890123456
+//   pos1   : 网格广告 1 的广告单元 ID（在 AdSense 后台创建）
+//   pos2   : 网格广告 2 的广告单元 ID
+//   bottom : 分类页页尾广告的广告单元 ID
+// 注意：每个广告位必须使用独立的广告单元 ID。同一页面重复使用同一个广告单元 ID 时，
+//       AdSense 只会渲染第一个，其余广告位不显示，导致网格广告只显示部分。
 var CATEGORY_AD_UNITS = {
   client: 'ca-pub-6172791470588821',
   pos1: '4869723184',

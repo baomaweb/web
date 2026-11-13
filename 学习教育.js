@@ -1,6 +1,6 @@
 /**
  * 学习教育 分类页 - 数据 + 应用逻辑
- * 10 个网站
+ * 40 个网站
  */
 
 var CATEGORY = {
@@ -57,11 +57,61 @@ var CATEGORY = {
       "name": "TED",
       "url": "https://www.ted.com",
       "color": "#e62b1e"
+    },
+    {
+      "name": "网易云课堂",
+      "url": "https://study.163.com",
+      "color": "#e60012"
+    },
+    {
+      "name": "腾讯课堂",
+      "url": "https://ke.qq.com",
+      "color": "#1a73e8"
+    },
+    {
+      "name": "得到",
+      "url": "https://www.dedao.cn",
+      "color": "#ff6a00"
+    },
+    {
+      "name": "学习强国",
+      "url": "https://www.xuexi.cn",
+      "color": "#c7000b"
+    },
+    {
+      "name": "国家智慧教育平台",
+      "url": "https://www.smartedu.cn",
+      "color": "#1a73e8"
+    },
+    {
+      "name": "人教社",
+      "url": "https://www.pep.com.cn",
+      "color": "#c7000b"
+    },
+    {
+      "name": "好大学在线",
+      "url": "https://www.cnmooc.org",
+      "color": "#0066cc"
+    },
+    {
+      "name": "学而思",
+      "url": "https://www.xueersi.com",
+      "color": "#ff6a00"
+    },
+    {
+      "name": "作业帮",
+      "url": "https://www.zuoyebang.com",
+      "color": "#1a73e8"
+    },
+    {
+      "name": "猿辅导",
+      "url": "https://www.yuanfudao.com",
+      "color": "#ff6a00"
     }
   ]
 };
 
-var ICON_SVG = '';
+var ICON_SVG = '<svg viewBox="0 0 24 24"><path d="M22 10 12 4 2 10l10 6 10-6z" fill="#2c8fbb"/><path d="M6 12v5c0 1 3 3 6 3s6-2 6-3v-5" fill="#1abc9c"/><rect x="16" y="9" width="3" height="6" rx="1" fill="#ff4e00"/></svg>';
 function getInitial(name) {
   return name.charAt(0).toUpperCase();
 }
@@ -100,7 +150,15 @@ function initTheme() {
   }
 }
 
-
+// ==================== AdSense: 分类页广告代码（独立代码块，仅分类页使用） ====================
+// 每个分类页共有 3 个广告位：网格广告 1（左上 2x2）、网格广告 2（右中 2x2）、页尾横幅。
+// 部署时请替换为 AdSense 后台的真实值：
+//   client : 你的发布商 ID，形如 ca-pub-1234567890123456
+//   pos1   : 网格广告 1 的广告单元 ID（在 AdSense 后台创建）
+//   pos2   : 网格广告 2 的广告单元 ID
+//   bottom : 分类页页尾广告的广告单元 ID
+// 注意：每个广告位必须使用独立的广告单元 ID。同一页面重复使用同一个广告单元 ID 时，
+//       AdSense 只会渲染第一个，其余广告位不显示，导致网格广告只显示部分。
 var CATEGORY_AD_UNITS = {
   client: 'ca-pub-6172791470588821',
   pos1: '4869723184',
